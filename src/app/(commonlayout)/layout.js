@@ -1,5 +1,5 @@
-
-import "./globals.css";
+import "../globals.css";
+import Navbar from "./component/shared/Navbar";
 
 
 export const metadata = {
@@ -7,12 +7,13 @@ export const metadata = {
   description: "Custom Software & App Solutions Built for Your Business",
 };
 
-export default function RootLayout({ children }) {
+export default function CommonLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`  antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>

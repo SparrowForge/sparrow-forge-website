@@ -10,14 +10,10 @@ export const metadata = {
 
 export default function CommonLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`  antialiased`}
-      >
+<div>
         <Navbar/>
         {children}
         <Footer/>
-      </body>
-    </html>
+      </div>
   );
 }

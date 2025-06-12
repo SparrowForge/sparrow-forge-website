@@ -13,7 +13,7 @@
   --color-footer: #366059;
   --font-urbanist: 'Urbanist', sans-serif;
   --text-title: "56px";
-  
+
 }
 
 
@@ -44,7 +44,7 @@ body {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 

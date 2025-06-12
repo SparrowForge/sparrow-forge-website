@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { CiMenuKebab } from 'react-icons/ci';
+import SparrowLogo from './SparrowLogo';
 
 const menuItems = [
     { name: 'Home', href: '/home' },
@@ -21,10 +22,7 @@ const Navbar = () => {
         <>
             <div className="relative bg-gray font-urbanist mx-auto flex items-center justify-between my-4 md:w-[968px] h-[64px] rounded-full px-6">
 
-                <div className="flex items-center gap-2">
-                    <Image src="/Bird.svg" alt="Logo" width={24} height={24} />
-                    <span className="font-semibold text-[16px]">Sparrow Forge</span>
-                </div>
+               <SparrowLogo/>
                 {/* desktop start */}
 
                 <ul className="hidden md:flex gap-6 text-[16px] text-navtext line-clamp-1">

@@ -10,8 +10,13 @@
   --color-gray: #E9E9E9;
   --color-orange: #FF772D;
   --color-navtext: #5E5D5C;
+  --color-footer: #366059;
   --font-urbanist: 'Urbanist', sans-serif;
+  --text-title: "56px";
+
 }
+
+
 
 /* @theme inline {
   --color-background: var(--background);
@@ -33,3 +38,16 @@ body {
   font-family: Arial, Helvetica, sans-serif; 
 } 
 */
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animation-zoom-out-hover:hover {
+  animation: zoomOut 0.3s ease-in-out forwards;
+}

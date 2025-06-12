@@ -1,4 +1,5 @@
 import "../globals.css";
+import Footer from "./component/shared/Footer";
 import Navbar from "./component/shared/Navbar";
 
 
@@ -9,13 +10,10 @@ export const metadata = {
 
 export default function CommonLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`  antialiased`}
-      >
+<div>
         <Navbar/>
         {children}
-      </body>
-    </html>
+        <Footer/>
+      </div>
   );
 }

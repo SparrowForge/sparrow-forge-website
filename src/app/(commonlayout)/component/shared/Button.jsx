@@ -13,7 +13,7 @@ const Button = ({ title, className, image }) => {
                         alt="arrow"
                         width={12}
                         height={12}
-                        className="inline-block"
+                        className="inline-block h-auto w-auto"
                     />
                 )}
             </div>

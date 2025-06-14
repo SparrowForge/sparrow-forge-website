@@ -1,10 +1,13 @@
-import Image from "next/image";
+
 import MainBanner from "./component/homepage/MainBanner";
+import TestimonialSection from "./component/homepage/TestimonialSection";
 
 export default function Home() {
   return (
-   <div className="min-h-screen">
-   <MainBanner/>
-   </div>
+    <div className="mx-auto  min-h-screen">
+      <MainBanner />
+      <TestimonialSection />
+
+    </div>
   );
 }

@@ -60,7 +60,7 @@ const footerData = {
         },
         {
             icon: companyIcon,
-            text: '577 Innovation Drive, Tech Valley Park, San Francisco, CA 94107, USA',
+            text: '57 Innovation Drive, Tech Valley Park, San Francisco, CA 94107, USA',
             href: "#",
         },
     ],
@@ -68,83 +68,85 @@ const footerData = {
 
 const Footer = () => {
     return (
-        <div className='relative bg-footer text-white w-full pt-52 pb-10'>
+        <div className='relative bg-green text-white w-full pt-52 pb-10 mt-20 md:mt-60'>
             {/* Floating Above Card */}
             <div className='flex justify-center items-center absolute z-50 -top-20 md:-top-52 left-0 right-0 mx-10'>
                 <FooterAboveCard />
             </div>
 
             {/* Footer Content */}
-            <div className=' mx-10 px-6 grid grid-cols-1 md:grid-cols-5  gap-10 md:gap-4 text-center md:text-start'>
+            <div className=' mx-10 flex flex-col md:flex-row justify-between items-start text-center md:text-start'>
                 {/* Company Info */}
-                <div className='space-y-4 '>
+                <div className='mb-10 md:w-1/4 space-y-4 '>
                     <div className='flex justify-center md:justify-start'>
                         <SparrowLogo />
                     </div>
-                    <p className='text-sm text-[#FFFFFF]/48 max-w-xs leading-6'>{footerData.company.description}</p>
+                    <p className='text-sm text-[#FFFFFF]/48  '>{footerData.company.description}</p>
                 </div>
 
-                {/* Quick Links */}
-                <div className='md:ml-16'>
-                    <h3 className='font-semibold text-md mb-2'>Quick Links</h3>
-                    <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
-                        {footerData.quickLinks.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
-                                    {item.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <div className='w-full md:w-2/4 grid grid-cols-1 md:grid-cols-3  gap-10 md:gap-4 text-center md:text-start'>
+                    {/* Quick Links */}
+                    <div className='md:ml-16'>
+                        <h3 className='font-semibold text-md mb-2'>Quick Links</h3>
+                        <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
+                            {footerData.quickLinks.map((item, index) => (
+                                <li key={index}>
+                                    <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
+                                        {item.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
-                {/* Services */}
-                <div>
-                    <h3 className='font-semibold text-md mb-2'>Services</h3>
-                    <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
-                        {footerData.services.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
-                                    {item.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                    {/* Services */}
+                    <div>
+                        <h3 className='font-semibold text-md mb-2'>Services</h3>
+                        <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
+                            {footerData.services.map((item, index) => (
+                                <li key={index}>
+                                    <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
+                                        {item.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
-                {/* Follow Us */}
-                <div>
-                    <h3 className='font-semibold text-md mb-2'>Follow Us</h3>
-                    <ul className='space-y-2 text-sm text-[#FFFFFF]/48'>
-                        {footerData.socialMedia.map((item, index) => (
-                            <li key={index} >
-                                <a href={item.href} className='flex items-center gap-2 hover:text-orange cursor-pointer'>
-                                    <Image src={item.icon} alt={item.name} width={18} height={18} className='h-auto w-auto' />
-                                {item.name}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                    {/* Follow Us */}
+                    <div className='mx-auto'>
+                        <h3 className='font-semibold text-md mb-2'>Follow Us</h3>
+                        <ul className='space-y-2 text-sm text-[#FFFFFF]/48'>
+                            {footerData.socialMedia.map((item, index) => (
+                                <li key={index} >
+                                    <a href={item.href} className='flex items-center gap-2 hover:text-orange cursor-pointer'>
+                                        <Image src={item.icon} alt={item.name} width={18} height={18} className='h-auto w-auto' />
+                                        {item.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
+
+                </div>
                 {/* Contact */}
-                <div>
+                <div className='mt-10 md:mt-0 md:w-1/4'>
                     <h3 className='font-semibold text-md mb-2'>Get in Touch</h3>
                     <ul className='space-y-2 text-sm text-[#FFFFFF]/48'>
                         {footerData.contact.map((item, index) => (
-                            <li key={index} className='flex items-start gap-2'>
+                            <li key={index} >
                                 <a href={item.href} className='flex items-center gap-2 hover:text-orange cursor-pointer'>
-                                    <span className='mt-1'>
-                                        <Image src={item.icon} alt={item.text} width={16} height={16} className='h-auto w-auto' />
-                                    </span>
-                                    <span>{item.text}</span>
+
+                                    <Image src={item.icon} alt={item.text} width={16} height={16} className='h-auto w-auto' />
+
+                                    <h1 className='text-[16px]'>{item.text}</h1>
                                 </a>
 
                             </li>
                         ))}
                     </ul>
                 </div>
-
             </div>
             {/* Bottom Bar */}
             <div className='border-t border-[#FFFFFF]/14 mt-12 pt-6  px-6 mx-auto text-sm  items-center text-[#FFFFFF]/48'>

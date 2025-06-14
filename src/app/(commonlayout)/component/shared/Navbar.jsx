@@ -7,7 +7,7 @@ import { CiMenuKebab } from 'react-icons/ci';
 import SparrowLogo from './SparrowLogo';
 
 const menuItems = [
-    { name: 'Home', href: '/home' },
+    { name: 'Home', href: '/' },
     { name: 'Service', href: '/service' },
     { name: 'About us', href: '/about' },
     { name: 'Development Teams', href: '/teams' },

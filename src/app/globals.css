@@ -59,12 +59,18 @@ body {
 .swiper-button-next {
   color: #ffffff !important;
   background-color: var(--color-orange);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 100%;
   transition: background-color 0.3s ease;
   border: none;
   outline: none;
   box-shadow: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.25rem; /* smaller icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-button-prev:hover,
@@ -75,4 +81,9 @@ body {
 .swiper-button-next:focus {
   outline: none;
   box-shadow: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important; /* smaller arrow icon */
 }

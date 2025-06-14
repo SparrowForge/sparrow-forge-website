@@ -7,11 +7,11 @@
 }
 
 @theme {
+  --color-title:#111113;
   --color-gray: #E9E9E9;
   --color-green: #366059;
   --color-orange: #FF772D;
   --color-navtext: #5E5D5C;
-
   --font-urbanist: 'Urbanist', sans-serif;
   --text-title: "56px";
 

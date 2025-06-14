@@ -68,7 +68,7 @@ const footerData = {
 
 const Footer = () => {
     return (
-        <div className='relative bg-green text-white w-full pt-52 pb-10 md:mt-60'>
+        <div className='relative bg-green text-white w-full pt-52 pb-10 mt-20 md:mt-60'>
             {/* Floating Above Card */}
             <div className='flex justify-center items-center absolute z-50 -top-20 md:-top-52 left-0 right-0 mx-10'>
                 <FooterAboveCard />

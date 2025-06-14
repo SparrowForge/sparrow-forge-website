@@ -8,15 +8,22 @@
 
 @theme {
   --color-gray: #E9E9E9;
+  --color-green: #366059;
   --color-orange: #FF772D;
   --color-navtext: #5E5D5C;
-  --color-footer: #366059;
+
   --font-urbanist: 'Urbanist', sans-serif;
   --text-title: "56px";
 
 }
 
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0f0f;
+    --foreground: #ededed;
+  }
+}
 
 /* @theme inline {
   --color-background: var(--background);
@@ -25,12 +32,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f0f0f;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
@@ -43,6 +44,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -50,4 +52,27 @@ body {
 
 .animation-zoom-out-hover:hover {
   animation: zoomOut 0.3s ease-in-out forwards;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;
+  background-color: var(--color-orange);
+  padding: 2rem;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--color-orange);
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+  box-shadow: none;
 }

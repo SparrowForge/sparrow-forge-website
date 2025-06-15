@@ -1,5 +1,7 @@
 
 import SharedCard from "./component/card/SharedCard";
+import AvatarGroup from "./component/design/AvatarGroup";
+import AboutUs from "./component/homepage/AboutUs";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
 import MainBanner from "./component/homepage/MainBanner";
 import OurLatestBlog from "./component/homepage/OurLatestBlog";
@@ -12,8 +14,10 @@ export default function Home() {
     <div className="w-[100%] mx-auto  min-h-screen font-urbanist">
       <MainBanner />
       <TrustedBy/>
+      <AboutUs/>
       <OurLatestBlog/>
       <IndustriesWeServe/>
+      {/* <AvatarGroup/> */}
       <OurServices/>
       <TestimonialSection />
     

@@ -5,7 +5,7 @@ import IndustriesCard from '../card/IndustriesCard';
 const IndustriesWeServe = () => {
     return (
         <div 
-        className='mx-10 py-20 '
+        className='mx-4 md:mx-10 py-20 '
         >
             <IndustriesWeServeBanner/>
             <IndustriesCard/>

@@ -58,7 +58,7 @@ const TestimonialSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     return (
-        <div className="relative w-full md:px-4  bg-white ">
+        <div className="relative w-[100%] md:px-4  bg-white ">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -78,6 +78,7 @@ const TestimonialSection = () => {
                                     <div className="text-4xl text-orange mb-4">
                                         < Image
                                             src="/slideImages/cuatation.svg"
+                                            alt="image"
                                             width={100}
                                             height={100}
                                             className="w-4 md:w-9"

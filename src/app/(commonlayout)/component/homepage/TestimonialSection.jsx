@@ -58,7 +58,7 @@ const TestimonialSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     return (
-        <div className="relative w-[100%] md:px-4  bg-white ">
+        <div className="relative w-[100%] md:px-4 md:my-10 bg-white ">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -117,7 +117,7 @@ const TestimonialSection = () => {
                                     height={100}
                                     src={testimonial.image}
                                     alt={testimonial.name}
-                                    className="w-[638px] h-auto rounded-xl"
+                                    className="w-[638px] h-[500px] rounded-xl"
                                 />
                             </div>
                         </div>

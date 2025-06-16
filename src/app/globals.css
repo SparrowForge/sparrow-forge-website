@@ -7,10 +7,22 @@
 }
 
 @theme {
+  --color-title:#111113;
   --color-gray: #E9E9E9;
+  --color-green: #366059;
   --color-orange: #FF772D;
   --color-navtext: #5E5D5C;
   --font-urbanist: 'Urbanist', sans-serif;
+  --text-title: "56px";
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0f0f;
+    --foreground: #ededed;
+  }
 }
 
 /* @theme inline {
@@ -20,12 +32,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f0f0f;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
@@ -33,3 +39,53 @@ body {
   font-family: Arial, Helvetica, sans-serif; 
 } 
 */
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animation-zoom-out-hover:hover {
+  animation: zoomOut 0.3s ease-in-out forwards;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;
+  background-color: var(--color-orange);
+  padding: 1.5rem;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.25rem; /* smaller icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--color-orange);
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important; /* smaller arrow icon */
+}
+
+

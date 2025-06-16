@@ -87,7 +87,7 @@ const OurStorySlider = () => {
                     return (
                         <div
                             key={index}
-                            onClick={() => swiperRef.current?.slideTo(index)} // 3. Slide to selected index
+                            onClick={() => swiperRef.current?.slideTo(index)} 
                             className={`cursor-pointer transition-all duration-300 rounded-full ${isActive ? "w-8 h-2 bg-white" : "w-2 h-2 bg-white/50"
                                 }`}
                         />

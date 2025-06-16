@@ -89,25 +89,3 @@ body {
 }
 
 
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 9999px;
-  background-color: white;
-  opacity: 0.6;
-  transition: all 0.3s ease-in-out;
-}
-
-.swiper-pagination-bullet-active {
-  width: 40px;
-  height: 8px;
-  border-radius: 9999px;
-  background-color: white;
-  opacity: 1;
-}

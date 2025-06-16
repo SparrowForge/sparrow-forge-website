@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Navigation } from "swiper/modules";
+import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
@@ -60,12 +60,15 @@ const TestimonialSection = () => {
     return (
         <div className="relative w-[100%] md:px-4 md:my-10 bg-white ">
             <Swiper
+                pagination={{
+                    clickable: true,
+                }}
                 slidesPerView={1}
                 spaceBetween={30}
                 keyboard={{ enabled: true }}
-                navigation = {true}
+                navigation={true}
                 onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
-                modules={[Keyboard, Navigation]}
+                modules={[Keyboard, Navigation, Pagination]}
                 className="mySwiper"
             >
                 {data.map((testimonial) => (
@@ -117,7 +120,7 @@ const TestimonialSection = () => {
                                     height={100}
                                     src={testimonial.image}
                                     alt={testimonial.name}
-                                    className="w-[638px] h-[500px] rounded-xl"
+                                    className="w-auto h-[500px] 2xl:h-[450px] rounded-xl"
                                 />
                             </div>
                         </div>

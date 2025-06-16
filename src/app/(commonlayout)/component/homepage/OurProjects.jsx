@@ -4,9 +4,9 @@ import OurProjectBanner from '../design/OurProjectBanner';
 
 const OurProjects = () => {
     return (
-        <div className='my-10 md:my-0'>
-            <OurProjectBanner/>
-           < OurProjectCard />
+        <div className='my-10 '>
+            <OurProjectBanner />
+            <OurProjectCard />
         </div>
     );
 };

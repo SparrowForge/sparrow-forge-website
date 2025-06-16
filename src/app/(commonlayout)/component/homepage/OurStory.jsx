@@ -1,9 +1,11 @@
-import React from 'react';
+
+import OurStorySlider from '../design/OurStorySlider';
 
 const OurStory = () => {
     return (
-        <div>
+        <div className='bg-gray p-6'>
             
+            <OurStorySlider/>
         </div>
     );
 };

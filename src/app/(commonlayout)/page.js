@@ -1,8 +1,7 @@
 
-import SharedCard from "./component/card/SharedCard";
-import AvatarGroup from "./component/design/AvatarGroup";
 import AboutUs from "./component/homepage/AboutUs";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
+import Innovation from "./component/homepage/Innovation";
 import MainBanner from "./component/homepage/MainBanner";
 import OurLatestBlog from "./component/homepage/OurLatestBlog";
 import OurServices from "./component/homepage/OurServices";
@@ -19,6 +18,7 @@ export default function Home() {
       <IndustriesWeServe/>
       {/* <AvatarGroup/> */}
       <OurServices/>
+      <Innovation/>
       <TestimonialSection />
     
     </div>

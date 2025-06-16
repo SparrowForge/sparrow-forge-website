@@ -49,7 +49,7 @@ const IndustriesCard = () => {
                             <div
                                 className={`hover:border hover:border-orange rounded-xl transition-opacity duration-300 ${opacityClass}`}
                             >
-                                <div className="group flex flex-col items-center py-8 px-4 bg-white hover:bg-orange hover:text-white shadow-md rounded-lg m-2">
+                                <div className="group flex flex-col items-center py-8 px-4 bg-gray hover:bg-orange hover:text-white shadow-md rounded-lg m-2">
                                     <div className="transition duration-300">
                                         <Image
                                             width={40}

@@ -11,6 +11,7 @@ const MainBanner = () => {
                 src="/leftBanner.svg"
                 width={30}
                 height={40}
+                alt='image'
                 className='hidden md:flex w-auto h-auto' />
 
             <div>
@@ -23,6 +24,7 @@ const MainBanner = () => {
                 src="/rightBanner.svg"
                 width={30}
                 height={40}
+                alt='image'
                 className='hidden md:flex w-auto h-auto' />
 
         </div>

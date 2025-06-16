@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Button from "../shared/Button";
+import ButtonTitle from "../shared/ButtonTitle";
 
 
 const HomeBannerAbove = () => {
     return (
         <div className="flex flex-col justify-center items-center py-10 px-4 md:px-0">
             <div className="flex justify-center items-center gap-0 md:gap-2 py-1 px-1 md:px-2 bg-white rounded-full mb-4 md:mb-0 text-[10px] md:text-[16px]">
-                <button className="bg-gray py-1 px-2 md:px-3 rounded-full">
-                   Achievements! 🏆
-                </button>
+               <ButtonTitle title="Achievements! 🏆" />
               <p className="">  $1M Raised Building Smarter Solutions</p>
                 <Image src="/bannerImg/arrowRightDown.svg"
                     width={60}

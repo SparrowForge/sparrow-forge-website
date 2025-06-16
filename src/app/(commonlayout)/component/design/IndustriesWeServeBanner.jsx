@@ -1,14 +1,21 @@
 import React from 'react';
 import Button from '../shared/Button';
+import Title from '../shared/Title';
 
 const IndustriesWeServeBanner = () => {
     return (
         <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
             <div className='w-full md:w-2/4'>
-                <h1 className='text-[32px] md:text-[56px] font-bold'>Industries We Serve</h1>
-                <p className='text-[20px]'>We have worked across multiple industry verticals over the years and helped businesses in diverse domains. We have served a wide range of industries like and many more.</p>
+                <Title
+                    title="Industries We Serve"
+                    subtitle="We have worked across multiple industry verticals over the years and helped businesses in diverse domains. We have served a wide range of industries like and many more."
+                    className="flex flex-col justify-center items-start gap-4 my-16"
+                />
+
+                {/* <h1 className='text-[32px] md:text-[56px] font-bold'>Industries We Serve</h1>
+                <p className='text-[20px]'>We have worked across multiple industry verticals over the years and helped businesses in diverse domains. We have served a wide range of industries like and many more.</p> */}
             </div>
-             <div className='border border-orange p-1 rounded-full animation-zoom-out-hover text-[10px] md:text-[18px] mt-4'>
+            <div className='border border-orange p-1 rounded-full animation-zoom-out-hover text-[10px] md:text-[18px] mt-4'>
                 <Button
                     image="/bannerImg/arrowRightUp.svg"
                     title="Get Started"

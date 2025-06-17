@@ -61,16 +61,16 @@ const OurStorySlider = () => {
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div
-                            className="relative w-full h-[300px] md:h-[400px] rounded-[38px] overflow-hidden bg-cover bg-center flex items-end justify-start"
+                            className="relative w-full h-[300px] md:h-[360px] rounded-[38px] overflow-hidden bg-cover bg-center flex items-end justify-start"
                             style={{
                                 backgroundImage: `url(${item.image})`,
                             }}
                         >
                             <div className="z-10  text-start text-white  px-6 mb-10">
-                                <h2 className="text-[28px]  font-bold mb-2 drop-shadow-lg">
+                                <h2 className="text-[28px]  font-bold mb-1 drop-shadow-lg">
                                     {item.name}
                                 </h2>
-                                <p className="text-[14px] md:mr-[10vh] ">
+                                <p className="text-[14px] md:mr-[80vh] ">
                                     {item.subtitle}
                                 </p>
                             </div>
@@ -81,7 +81,7 @@ const OurStorySlider = () => {
             </Swiper>
 
             {/* Pagination dots */}
-            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+            <div className="absolute bottom-14 md:bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                 {data.map((_, index) => {
                     const isActive = index === currentSlide;
                     return (

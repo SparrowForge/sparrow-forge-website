@@ -18,7 +18,7 @@ const data = [
 const IndustriesCard = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const length = data.length;
-    console.log("active", activeIndex)
+    // console.log("active", activeIndex)
 
     return (
         <div className="my-10">

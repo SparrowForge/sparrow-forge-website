@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const OurStoryMissionCard = () => {
     return (
-        <div className="bg-green flex justify-center px-10 text-white rounded-[38px]">
-            <div className="flex flex-col justify-between items-start py-10">
+        <div className="bg-green flex justify-center px-8 text-white rounded-[38px]">
+            <div className="flex flex-col justify-between items-start py-8">
                 <div>
                     <h1 className="text-[28px] font-bold">Our Mission</h1>
                     <p className="text-[14px]">To create smart, reliable digital solutions that empower businesses to grow, innovate, and succeed — all through clean design, custom development, and user-first thinking.</p>
@@ -19,7 +19,7 @@ const OurStoryMissionCard = () => {
                 width={30}
                 height={40}
                 alt='image'
-                className='hidden md:flex w-auto h-auto' />
+                className='hidden md:flex w-auto h-auto mr-4' />
 
         </div>
     );

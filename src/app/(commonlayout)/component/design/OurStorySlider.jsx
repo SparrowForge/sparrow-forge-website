@@ -74,7 +74,7 @@ const OurStorySlider = () => {
                                     {item.subtitle}
                                 </p>
                             </div>
-                            <div className="absolute inset-0 bg-black/40"></div>
+                            {/* <div className="absolute inset-0 bg-black/40"></div> */}
                         </div>
                     </SwiperSlide>
                 ))}

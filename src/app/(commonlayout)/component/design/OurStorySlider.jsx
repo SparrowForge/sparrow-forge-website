@@ -48,7 +48,7 @@ const OurStorySlider = () => {
     const swiperRef = useRef(null);
 
     return (
-        <div className="relative w-full py-16">
+        <div className="relative w-full py-10">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -61,7 +61,7 @@ const OurStorySlider = () => {
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div
-                            className="relative w-full h-[500px] rounded-[38px] overflow-hidden bg-cover bg-center flex items-end justify-start"
+                            className="relative w-full h-[300px] md:h-[400px] rounded-[38px] overflow-hidden bg-cover bg-center flex items-end justify-start"
                             style={{
                                 backgroundImage: `url(${item.image})`,
                             }}
@@ -70,7 +70,7 @@ const OurStorySlider = () => {
                                 <h2 className="text-[28px]  font-bold mb-2 drop-shadow-lg">
                                     {item.name}
                                 </h2>
-                                <p className="text-[14px] md:mr-[160vh] ">
+                                <p className="text-[14px] md:mr-[10vh] ">
                                     {item.subtitle}
                                 </p>
                             </div>

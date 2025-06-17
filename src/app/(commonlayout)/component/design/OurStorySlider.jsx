@@ -61,7 +61,7 @@ const OurStorySlider = () => {
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div
-                            className="relative w-full h-[500px] rounded-xl overflow-hidden bg-cover bg-center flex items-end justify-start"
+                            className="relative w-full h-[500px] rounded-[38px] overflow-hidden bg-cover bg-center flex items-end justify-start"
                             style={{
                                 backgroundImage: `url(${item.image})`,
                             }}

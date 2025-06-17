@@ -6,7 +6,7 @@ const OurStoryMissionCard = () => {
         <div className="bg-green flex justify-center px-10 text-white rounded-[38px]">
             <div className="flex flex-col justify-between items-start py-10">
                 <div>
-                    <h1 className="text-[28px]">Our Mission</h1>
+                    <h1 className="text-[28px] font-bold">Our Mission</h1>
                     <p className="text-[14px]">To create smart, reliable digital solutions that empower businesses to grow, innovate, and succeed — all through clean design, custom development, and user-first thinking.</p>
                 </div>
                 <div className='border border-gray/50 p-1 rounded-full animation-zoom-out-hover text-[10px] md:text-[18px] mt-4'>

@@ -1,12 +1,13 @@
 
-import OurStoryMissionCard from '../design/OurStoryMissionCard';
-import OurStorySlider from '../design/OurStorySlider';
+import OurStoryDesignLeft from '../design/OurStoryDesignLeft';
+import OurStoryDesignRight from '../design/OurStoryDesignRight';
+
 
 const OurStory = () => {
     return (
         <div className='bg-gray p-6'>
-            <OurStoryMissionCard/>
-            <OurStorySlider/>
+            <OurStoryDesignLeft/>
+            <OurStoryDesignRight/>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard } from "swiper/modules";
+import { Keyboard,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -53,9 +53,13 @@ const OurStorySlider = () => {
                 slidesPerView={1}
                 spaceBetween={30}
                 keyboard={{ enabled: true }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                modules={[Keyboard]}
+                modules={[Keyboard, Autoplay]}
                 className="mySwiper"
             >
                 {data.map((item) => (
@@ -87,7 +91,7 @@ const OurStorySlider = () => {
                     return (
                         <div
                             key={index}
-                            onClick={() => swiperRef.current?.slideTo(index)} 
+                            onClick={() => swiperRef.current?.slideTo(index)}
                             className={`cursor-pointer transition-all duration-300 rounded-full ${isActive ? "w-8 h-2 bg-white" : "w-2 h-2 bg-white/50"
                                 }`}
                         />

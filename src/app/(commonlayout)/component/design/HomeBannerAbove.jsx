@@ -10,6 +10,7 @@ const HomeBannerAbove = () => {
                <ButtonTitle title="Achievements! 🏆" />
               <p className="">  $1M Raised Building Smarter Solutions</p>
                 <Image src="/bannerImg/arrowRightDown.svg"
+                alt="image"
                     width={60}
                     height={60}
                     className='w-auto h-auto' />

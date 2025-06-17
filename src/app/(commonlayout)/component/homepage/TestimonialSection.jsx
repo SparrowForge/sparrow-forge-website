@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Navigation } from "swiper/modules";
+import { Keyboard, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
@@ -65,9 +65,13 @@ const TestimonialSection = () => {
                 spaceBetween={30}
                 keyboard={{ enabled: true }}
                 navigation={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                modules={[Keyboard, Navigation]}
+                modules={[Keyboard, Navigation, Autoplay]}
                 className="mySwiper"
             >
                 {data.map((testimonial) => (
@@ -130,7 +134,7 @@ const TestimonialSection = () => {
                     return (
                         <div
                             key={index}
-                            onClick={() => swiperRef.current?.slideTo(index)} 
+                            onClick={() => swiperRef.current?.slideTo(index)}
                             className={`cursor-pointer transition-all duration-300 rounded-full ${isActive ? "w-8 h-2 md:w-9 md:h-3 bg-orange" : "w-2 h-2 md:w-3 md:h-3 bg-orange/50"
                                 }`}
                         />

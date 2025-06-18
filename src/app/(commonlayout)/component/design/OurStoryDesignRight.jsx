@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const OurStoryDesignRight = () => {
     return (
-        <div className='flex flex-col items-start justify-between py-4 md:px-10 space-y-4 md:space-y-48 2xl:space-y-96'>
+        <div className='flex flex-col items-start justify-between py-4 md:px-10 space-y-4 md:space-y-48 2xl:space-y-56 '>
             
             <div className='flex justify-center'>
                 <Title

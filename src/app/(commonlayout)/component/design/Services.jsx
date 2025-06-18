@@ -3,22 +3,22 @@ import SharedCard from '../card/SharedCard';
 const data = [
     {
         id: 1,
-        heading: "Web Design & Development",
-        description: "We focus on user-centered interface and experience design tailored for web, mobile, and SaaS applications. Our goal is to create intuitive, engaging, and visually appealing designs that not only look great but also make your product easy and enjoyable to use.",
+        heading: "Cloud & Web Solution",
+        description: "We design scalable, secure cloud and web solutions tailored to your business needs. From SaaS platforms to enterprise portals, we deliver performance-driven systems optimized for growth.",
         date: "Learn More",
         image: "/services/1.svg",
     },
     {
         id: 2,
-        heading: "UI/UX Design",
-        description: "We focus on user-centered interface and experience design tailored for web, mobile, and SaaS applications. Our goal is to create intuitive, engaging, and visually appealing designs that not only look great but also make your product easy and enjoyable to use.",
+        heading: "Mobile & Desktop Application",
+        description: "We develop high-performance mobile and desktop applications with intuitive interfaces and robust functionality. Our solutions run seamlessly across platforms to enhance user engagement and productivity.",
         date: "Learn More",
         image: "/services/2.svg",
     },
     {
         id: 3,
         heading: "IT Consulting & Support",
-        description: "We focus on user-centered interface and experience design tailored for web, mobile, and SaaS applications. Our goal is to create intuitive, engaging, and visually appealing designs that not only look great but also make your product easy and enjoyable to use.",
+        description: "We provide strategic IT consulting and end-to-end technical support to help businesses streamline operations, reduce risk, and drive innovation through technology.",
         date: "Learn More",
         image: "/services/3.svg",
     }

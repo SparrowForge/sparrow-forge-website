@@ -2,22 +2,22 @@ import React from 'react';
 
 const stats = [
     {
-        value: '98%',
+        value: '100%',
         title: 'Client Satisfaction',
         description:
-            "Our clients’ satisfaction is our top priority, and we’re proud to have achieved a 98% satisfaction rate by consistently delivering quality results and attentive service.",
+            "We focus on understanding your business needs and crafting solutions that match your goals. With our experience, we also provide expert suggestions to improve functionality, ensuring your software supports growth, efficiency, and long-term success.",
     },
     {
-        value: '250+',
-        title: 'Completed Projects',
+        value: '15+',
+        title: 'Projects Successfully Delivered',
         description:
-            'Sparrow Forge Ltd. delivers reliable, high-quality digital solutions tailored to your needs—helping your business grow with confidence.',
+            'We have successfully delivered a wide range of custom software and mobile applications across various industries. Each project is built with precision, aligning with client objectives to ensure smooth functionality, modern design, and meaningful impact on business growth and efficiency.',
     },
     {
-        value: '10+',
-        title: 'Years of Experience',
+        value: '20+',
+        title: 'Years of Technical Excellence',
         description:
-            'We specialize in delivering custom digital solutions that blend modern design, seamless functionality, and reliable performance—helping businesses thrive in the digital world.',
+            'Our team brings over two decades of combined expertise across software development, UI/UX design, and system architecture. This deep experience allows us to solve complex challenges efficiently and deliver reliable, high-quality solutions tailored to your business needs.',
     },
 ];
 
@@ -34,7 +34,7 @@ const AboutCard = () => {
                     >
                         <div className="my-10">
                             <h2 className="text-[72px] font-semibold mb-2">{stat.value}</h2>
-                            <h3 className="uppercase font-semibold text-sm tracking-wider text-gray-700">
+                            <h3 className="uppercase font-semibold text-[16px] tracking-wider text-gray-700">
                                 {stat.title}
                             </h3>
                         </div>

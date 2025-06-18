@@ -7,8 +7,8 @@ const OurLatestBlog = () => {
     return (
         <div className="flex flex-col justify-center items-center gap-2 md:gap-10">
             <Title
-                title="Our Latest Blog"
-                subtitle="Each project highlights our collaborative approach and creative problem-solving. Our case studies show how we transform ideas into effective, scalable solutions."
+                title="Our Latest Insights"
+                subtitle="Our blogs and case studies reflect our commitment to innovation, strategic thinking, and practical solutions—showing how we turn challenges into scalable digital success for businesses worldwide."
                 className="flex flex-col justify-center items-center gap-4 md:my-16 md:mx-72 text-center"
             />
 

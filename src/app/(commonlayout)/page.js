@@ -22,7 +22,7 @@ export default function Home() {
       <IndustriesWeServe/>
       <OurServices/>
       <OurProjects/>
-      <OurStory/>    {/* not done yet */}
+      <OurStory/>   
       <Innovation/>
       <TestimonialSection />
     

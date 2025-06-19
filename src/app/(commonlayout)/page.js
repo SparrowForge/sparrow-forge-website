@@ -18,7 +18,7 @@ export default function Home() {
       <TrustedBy/>
       <AboutUs/>
       <OurLatestBlog/>
-      <OurGlobalFamily/> {/* not done yet */}
+      <OurGlobalFamily/> 
       <IndustriesWeServe/>
       <OurServices/>
       <OurProjects/>

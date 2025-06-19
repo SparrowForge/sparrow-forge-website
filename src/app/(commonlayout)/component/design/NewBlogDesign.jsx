@@ -41,9 +41,9 @@ const NewBlogDesign = () => {
                                 src={item.image}
                                 alt={item.heading}
                                 fill
-                                className="object-cover transition duration-500 opacity-0 group-hover:opacity-100 group-hover:blur-[2px]"
+                                className="object-cover transition duration-500 opacity-0 group-hover:opacity-100 group-hover:blur-black"
                             />
-
+  <div className="absolute inset-0 bg-black/50 bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 rounded-[38px]"></div>
                             <h1 className="font-semibold mb-2 text-lg">{item.heading}</h1>
                             <p className='text-sm mb-4'>{item.description.slice(0, 80)}....</p>
                         </div>
@@ -61,18 +61,18 @@ const NewBlogDesign = () => {
                             </Link>
                         </div>
 
-                     
+                        {/* Read More Button on hover */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 z-20">
                             <Link href={item.link} target="_blank">
-                                <button className=" px-6 py-3 rounded hover:bg-white flex items-center gap-2 shadow-lg">
+                                <div className="text-white flex items-center gap-2">
                                     Read More
                                     <Image
-                                        src="/bannerImg/arrowRightDown.svg"
+                                        src="/bannerImg/arrowRightUp.svg"
                                         alt='arrow'
-                                        width={16}
-                                        height={16}
+                                        width={20}
+                                        height={20}
                                     />
-                                </button>
+                                </div>
                             </Link>
                         </div>
                     </div>

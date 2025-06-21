@@ -6,7 +6,7 @@ import InnovationList from '../design/InnovationList';
 
 const Innovation = () => {
     return (
-        <div className='mx-4 md:mx-10 py-20 '>
+        <div id="career" className='mx-4 md:mx-10 py-20 '>
             <ButtonTitle title="Tech Talk & Tips 🧩" />
                <InnovationDesign/>
                <InnovationList/>

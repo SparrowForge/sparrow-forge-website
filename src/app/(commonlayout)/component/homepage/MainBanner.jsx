@@ -5,7 +5,7 @@ import HomeBannerAbove from '../design/HomeBannerAbove';
 
 const MainBanner = () => {
     return (
-        <div className='flex justify-between items-center gap-0 bg-gray py-8 rounded-lg mx-0 2xl:mx-4'>
+        <div id="home" className='flex justify-between items-center gap-0 bg-gray py-8 rounded-lg mx-0 2xl:mx-4'>
 
             <Image
                 src="/leftBanner.svg"

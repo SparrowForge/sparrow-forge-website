@@ -5,14 +5,24 @@ import React, { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { CiMenuKebab } from 'react-icons/ci';
 import SparrowLogo from './SparrowLogo';
+import Link from 'next/link';
+
+// const menuItems = [
+//     { name: 'Home', href: '/' },
+//     { name: 'Service', href: '/service' },
+//     { name: 'About us', href: '/about' },
+//     { name: 'Development Teams', href: '/teams' },
+//     { name: 'Career', href: '/career' },
+//     { name: 'Blog', href: '/blog' },
+// ];
 
 const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Service', href: '/service' },
-    { name: 'About us', href: '/about' },
-    { name: 'Development Teams', href: '/teams' },
-    { name: 'Career', href: '/career' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Service', href: '#service' },
+    { name: 'About us', href: '#about' },
+    { name: 'Development Teams', href: '#teams' },
+    { name: 'Career', href: '#career' },
+    { name: 'Blog', href: '#blog' },
 ];
 
 const Navbar = () => {
@@ -22,7 +32,7 @@ const Navbar = () => {
         <>
             <div className="relative bg-gray font-urbanist mx-auto flex items-center justify-between my-4 md:w-[968px] h-[64px] rounded-full px-6">
 
-               <SparrowLogo/>
+                <SparrowLogo />
                 {/* desktop start */}
 
                 <ul className="hidden md:flex gap-6 text-[16px] text-navtext line-clamp-1">
@@ -34,10 +44,11 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-
-                <button className="hidden md:flex items-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
-                    Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
-                </button>
+                <Link href="contactus">
+                    <button className="hidden md:flex items-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
+                        Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
+                    </button>
+                </Link>
                 {/* desktop end */}
 
                 {/*  Mobile start*/}
@@ -73,13 +84,15 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li>
-                        <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
-                            Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
-                        </button>
+                        <Link href="contactus">
+                            <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
+                                Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
+                            </button>
+                        </Link>
                     </li>
                 </ul>
             </div>
-              {/*  Mobile start*/}
+            {/*  Mobile end*/}
         </>
     );
 };

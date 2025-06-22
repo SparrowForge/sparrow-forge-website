@@ -19,7 +19,7 @@ const GetInTouchContact = () => {
         }
     ]
     return (
-        <div className="bg-white px-4 py-10  md:p-10 flex flex-col justify-start items-start gap-4 rounded-[38px] md:h-[122vh]">
+        <div className="bg-white px-4 py-10  md:p-10 flex flex-col justify-start items-start gap-4 rounded-[38px] md:h-[122vh] 2xl:h-screen">
             <ButtonTitle title="Get In Touch 📩" />
             <h1 className="font-bold text-[32px]">Want to Extend Your Team?</h1>
             <p className="text-[16px]">Have questions or ready to take the next step? Whether you’re looking to buy, rent, or invest, our team is here to guide you every step of the way. Let’s turn your property goals into reality.</p>

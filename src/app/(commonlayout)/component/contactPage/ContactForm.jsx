@@ -38,7 +38,7 @@ const ContactForm = () => {
             });
         } catch (error) {
             console.error("Error sending email:", error);
-            alert("Failed to send message.");
+            // alert("Failed to send message.");
         }
     };
 

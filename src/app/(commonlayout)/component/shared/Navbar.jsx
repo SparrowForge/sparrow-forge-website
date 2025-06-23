@@ -18,11 +18,11 @@ import Link from 'next/link';
 
 const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Service', href: '#service' },
-    { name: 'About us', href: '#about' },
-    { name: 'Development Teams', href: '#teams' },
-    { name: 'Career', href: '#career' },
-    { name: 'Blog', href: '#blog' },
+    { name: 'Service', href: '/#service' },
+    { name: 'About us', href: '/#about' },
+    { name: 'Development Teams', href: '/#teams' },
+    { name: 'Career', href: '/#career' },
+    { name: 'Blog', href: '/#blog' },
 ];
 
 const Navbar = () => {

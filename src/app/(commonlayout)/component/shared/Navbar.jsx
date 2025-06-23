@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
-import { CiMenuKebab } from 'react-icons/ci';
+import { TfiMenuAlt } from "react-icons/tfi";
 import SparrowLogo from './SparrowLogo';
 import Link from 'next/link';
 
@@ -18,11 +18,11 @@ import Link from 'next/link';
 
 const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Service', href: '#service' },
-    { name: 'About us', href: '#about' },
-    { name: 'Development Teams', href: '#teams' },
-    { name: 'Career', href: '#career' },
-    { name: 'Blog', href: '#blog' },
+    { name: 'Service', href: '/#service' },
+    { name: 'About us', href: '/#about' },
+    { name: 'Development Teams', href: '/#teams' },
+    { name: 'Career', href: '/#career' },
+    { name: 'Blog', href: '/#blog' },
 ];
 
 const Navbar = () => {
@@ -54,7 +54,7 @@ const Navbar = () => {
                 {/*  Mobile start*/}
                 <div className="md:hidden">
                     <button onClick={() => setMenuOpen(!menuOpen)}>
-                        {menuOpen ? <RxCross2 size={24} /> : <CiMenuKebab size={24} />}
+                        {menuOpen ? <RxCross2 size={24} /> : <TfiMenuAlt size={24} />}
                     </button>
                 </div>
             </div>

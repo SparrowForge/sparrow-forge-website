@@ -2,6 +2,7 @@ import React from 'react';
 import ContactForm from '../component/contactPage/ContactForm';
 import GetInTouchContact from '../component/contactPage/GetInTouchContact';
 import FrequentlyAQ from '../component/contactPage/FrequentlyAQ';
+import ScrollToTop from '../component/shared/ScrollToTop';
 
 const Contact = () => {
     return (
@@ -16,6 +17,7 @@ const Contact = () => {
 
             </div>
             <FrequentlyAQ/>
+            <ScrollToTop/>
         </div>
 
     );

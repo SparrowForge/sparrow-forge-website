@@ -49,7 +49,7 @@ const FrequentlyAQ = () => {
           }`}
         >
           <div
-            className="flex justify-between items-center px-5 pt-5 pb-2 cursor-pointer"
+            className="flex justify-between items-center p-5 cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
             <h3 className={`text-[24px] font-semibold ${activeIndex === index ? "text-white" : "text-black"}`}>

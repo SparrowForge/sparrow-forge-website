@@ -10,6 +10,7 @@ import OurServices from "./component/homepage/OurServices";
 import OurStory from "./component/homepage/OurStory";
 import TestimonialSection from "./component/homepage/TestimonialSection";
 import TrustedBy from "./component/homepage/TrustedBy";
+import ScrollToTop from "./component/shared/ScrollToTop";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <OurStory/>   
       <Innovation/>
       <TestimonialSection />
-    
+    <ScrollToTop/>
     </div>
   );
 }

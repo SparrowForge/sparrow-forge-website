@@ -4,7 +4,7 @@ import { sendEmail } from "@/lib/resend";
 import Button from "../shared/Button";
 import ButtonTitle from "../shared/ButtonTitle";
 import { useState } from "react";
-import { toast } from 'sonner';
+  import { ToastContainer, toast } from 'react-toastify';
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -20,6 +20,7 @@ const ContactForm = () => {
             ...prev,
             [name]: type === 'checkbox' ? checked : value
         }));
+        
     };
 
     const handleSubmit = async (e) => {
@@ -28,7 +29,7 @@ const ContactForm = () => {
         try {
             await sendEmail(formData);
             // console.log("form", formData)
-            toast.success("Your message has been sent successfully!");
+            toast.success("Thanks for sending message, keep connected!");
             setFormData({
                 fullName: '',
                 email: '',
@@ -133,6 +134,7 @@ const ContactForm = () => {
                     </div>
                 </div>
             </form>
+               <ToastContainer />
         </div>
     );
 };

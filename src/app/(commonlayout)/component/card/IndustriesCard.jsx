@@ -47,8 +47,8 @@ const IndustriesCard = () => {
                     return (
                         <SwiperSlide key={item.id}>
                             <div className="">
-                                <div className="relative hover:border hover:border-orange rounded-xl transition-opacity duration-300">
-                                    <div className="group flex flex-col items-center py-8 px-4 bg-gray hover:bg-orange hover:text-white rounded-lg m-2">
+                                <div className="relative hover:border hover:border-lightblue rounded-xl transition-opacity duration-300">
+                                    <div className="group flex flex-col items-center py-8 px-4 bg-gray hover:bg-lightblue hover:text-white rounded-lg m-2">
                                     <div className="transition duration-300">
                                         <Image
                                             width={40}

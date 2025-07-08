@@ -45,7 +45,7 @@ const FrequentlyAQ = () => {
         <div
           key={index}
           className={`max-w-3xl mx-auto mb-4 rounded-2xl overflow-hidden transition duration-300 ${
-            activeIndex === index ? "bg-orange text-white" : "bg-gray-100"
+            activeIndex === index ? "bg-lightblue text-white" : "bg-gray-100"
           }`}
         >
           <div
@@ -56,9 +56,9 @@ const FrequentlyAQ = () => {
               {item.question}
             </h3>
             {activeIndex === index ? (
-              <FaMinus className=" bg-white text-orange rounded-full w-6 h-6 p-2" />
+              <FaMinus className=" bg-white text-lightblue rounded-full w-6 h-6 p-2" />
             ) : (
-              <FaPlus className="text-white bg-orange rounded-full w-6 h-6 p-2" />
+              <FaPlus className="text-white bg-lightblue rounded-full w-6 h-6 p-2" />
             )}
           </div>
 

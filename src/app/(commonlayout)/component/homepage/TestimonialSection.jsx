@@ -14,7 +14,7 @@ const data = [
         rating: 4.8,
         feedback:
             "From design to development, Sparrow Forge exceeded our expectations. Communication was clear, and the results were outstanding. We've seen a real impact on our business.",
-        image: "/slideImages/image 25.svg",
+        image: "/slideImages/image.svg",
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const data = [
         rating: 4.8,
         feedback:
             "From design to development, Sparrow Forge exceeded our expectations. Communication was clear, and the results were outstanding. We've seen a real impact on our business.",
-        image: "/slideImages/image 25.svg",
+        image: "/slideImages/image.svg",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const data = [
         rating: 4.8,
         feedback:
             "From design to development, Sparrow Forge exceeded our expectations. Communication was clear, and the results were outstanding. We've seen a real impact on our business.",
-        image: "/slideImages/image 25.svg",
+        image: "/slideImages/image.svg",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const data = [
         rating: 4.8,
         feedback:
             "From design to development, Sparrow Forge exceeded our expectations. Communication was clear, and the results were outstanding. We've seen a real impact on our business.",
-        image: "/slideImages/image 25.svg",
+        image: "/slideImages/image.svg",
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const data = [
         rating: 4.8,
         feedback:
             "From design to development, Sparrow Forge exceeded our expectations. Communication was clear, and the results were outstanding. We've seen a real impact on our business.",
-        image: "/slideImages/image 25.svg",
+        image: "/slideImages/image.svg",
     },
 ];
 
@@ -79,7 +79,7 @@ const TestimonialSection = () => {
                         <div className="relative flex justify-center items-center w-full pb-12 pt-24">
                             <div className="bg-gray mx-10 p-6 md:p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-16">
                                 <div className="w-full md:w-2/3 relative text-center md:text-left">
-                                    <div className="text-4xl text-orange mb-4">
+                                    <div className="text-4xl text-lightblue mb-4">
                                         <Image
                                             src="/slideImages/cuatation.svg"
                                             alt="image"
@@ -88,7 +88,7 @@ const TestimonialSection = () => {
                                             className="w-4 md:w-9"
                                         />
                                     </div>
-                                    <p className="text-[14px] md:text-[28px] text-green font-medium md:mb-20">
+                                    <p className="text-[14px] md:text-[28px] text-deepblue font-medium md:mb-20">
                                         {testimonial.feedback}
                                     </p>
                                     <div className="w-28 h-28 flex md:hidden justify-center items-center mx-auto my-2">
@@ -135,7 +135,7 @@ const TestimonialSection = () => {
                         <div
                             key={index}
                             onClick={() => swiperRef.current?.slideTo(index)}
-                            className={`cursor-pointer transition-all duration-300 rounded-full ${isActive ? "w-8 h-2 md:w-9 md:h-3 bg-orange" : "w-2 h-2 md:w-3 md:h-3 bg-orange/50"
+                            className={`cursor-pointer transition-all duration-300 rounded-full ${isActive ? "w-8 h-2 md:w-9 md:h-3 bg-lightblue" : "w-2 h-2 md:w-3 md:h-3 bg-lightblue/50"
                                 }`}
                         />
                     );

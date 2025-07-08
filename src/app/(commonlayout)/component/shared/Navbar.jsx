@@ -38,15 +38,15 @@ const Navbar = () => {
                 <ul className="hidden md:flex gap-6 text-[16px] text-navtext line-clamp-1">
                     {menuItems.map((item) => (
                         <li key={item.name}>
-                            <a href={item.href} className="hover:text-orange transition">
+                            <a href={item.href} className="hover:text-lightblue transition">
                                 {item.name}
                             </a>
                         </li>
                     ))}
                 </ul>
                 <Link href="contactus">
-                    <button className="hidden md:flex items-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
-                        Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
+                    <button className="hidden md:flex items-center gap-2 px-4 py-2 border border-lightblue text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
+                        Contact us <Image src="/Phone.svg" alt="Phone" width={12} height={12} />
                     </button>
                 </Link>
                 {/* desktop end */}
@@ -77,7 +77,7 @@ const Navbar = () => {
                             <a
                                 href={item.href}
                                 onClick={() => setMenuOpen(false)}
-                                className="block hover:text-orange transition"
+                                className="block hover:text-lightblue transition"
                             >
                                 {item.name}
                             </a>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <Link href="contactus">
-                            <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-orange text-orange text-[16px] rounded-full hover:bg-orange-50 transition">
+                            <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-lightblue text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
                                 Contact us <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
                             </button>
                         </Link>

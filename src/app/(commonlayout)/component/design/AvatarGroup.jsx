@@ -21,7 +21,7 @@ const AvatarGroup = () => {
           />
         </div>
       ))}
-      <div className="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-bold ring-2 ring-white">
+      <div className="w-10 h-10 rounded-full bg-lightblue text-white flex items-center justify-center text-xl font-bold ring-2 ring-white">
         +
       </div>
     </div>

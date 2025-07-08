@@ -9,8 +9,8 @@
 @theme {
   --color-title:#111113;
   --color-gray: #E9E9E9;
-  --color-green: #366059;
-  --color-orange: #FF772D;
+  --color-deepblue: #051641;
+  --color-lightblue: #2164F8;
   --color-navtext: #5E5D5C;
   --font-urbanist: 'Urbanist', sans-serif;
   --text-title: "56px";
@@ -58,7 +58,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   color: #ffffff !important;
-  background-color: var(--color-orange);
+  background-color: var(--color-lightblue);
   padding: 1.5rem;
   border-radius: 100%;
   transition: background-color 0.3s ease;
@@ -75,7 +75,7 @@ body {
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-lightblue);
 }
 .swiper-button-prev:focus,
 .swiper-button-next:focus {

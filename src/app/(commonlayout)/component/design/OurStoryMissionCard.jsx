@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OurStoryMissionCard = () => {
     return (
-        <div className="bg-green flex justify-center px-8 text-white rounded-[38px]">
+        <div className="bg-deepblue flex justify-center px-8 text-white rounded-[38px]">
             <div className="flex flex-col justify-between items-start py-8">
                 <div>
                     <h1 className="text-[28px] font-bold">Our Mission</h1>

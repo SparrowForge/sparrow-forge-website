@@ -71,8 +71,8 @@ const WorldMapWithLocations = () => {
       <svg className="absolute inset-0 w-full h-full" viewBox={`0 0 ${width} ${height}`}>
         <polygon
           points="60,120 300,50 800,150 780,280 550,460 130,250"
-          fill="rgba(255, 119, 45, 0.08)"
-          stroke="#FF6600"
+          fill="rgba(33, 100, 248, 0.08)"
+          stroke="#2164F8"
           strokeWidth="2"
         />
       </svg>
@@ -81,7 +81,7 @@ const WorldMapWithLocations = () => {
       {locations.map((loc) => (
         <div key={loc.id} className="absolute group" style={{ top: loc.top, left: loc.left }}>
           {/* Icon */}
-          <div className="w-8 h-8 bg-orange rounded-full border-2 border-white flex justify-center items-center cursor-pointer">
+          <div className="w-8 h-8 bg-lightblue rounded-full border-2 border-white flex justify-center items-center cursor-pointer">
             <Image
               src="/map/company.svg"
               alt="World Map"
@@ -93,7 +93,7 @@ const WorldMapWithLocations = () => {
           </div>
 
           {/* Card (hidden by default, show on hover) */}
-          <div className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-orange text-white rounded-lg p-4 w-60 shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
+          <div className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-lightblue text-white rounded-lg p-4 w-60 shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
             <Image
               src={loc.image}
               alt={loc.title}

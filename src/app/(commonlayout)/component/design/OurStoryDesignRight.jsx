@@ -16,7 +16,7 @@ const OurStoryDesignRight = () => {
             {/* Right Side */}
             <div className='flex flex-col md:flex-row justify-between  gap-6 '>
                 <div className='flex flex-col justify-between items-start gap-2'>
-                    <div className='bg-orange rounded-[24px]'>
+                    <div className='bg-lightblue rounded-[24px]'>
                         <Image
                             src="/story/1.svg"
                             width={100}
@@ -31,7 +31,7 @@ const OurStoryDesignRight = () => {
                 </div>
 
                 <div className='flex flex-col justify-between items-start'>
-                    <div className='bg-green rounded-[24px]'>
+                    <div className='bg-deepblue rounded-[24px]'>
                         <Image
                             src="/story/2.svg"
                             width={100}

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const OurStoryAvatarCard = () => {
     return (
         <div className='bg-white rounded-[38px] flex flex-col justify-between items-start p-8'>
-            <h1 className='text-[18px] font-bold text-green'>Meet the Minds Behind the Magic A Team of Thinkers, Makers, and Problem-Solver.</h1>
+            <h1 className='text-[18px] font-bold text-deepblue'>Meet the Minds Behind the Magic A Team of Thinkers, Makers, and Problem-Solver.</h1>
 
             <Image
                 src="/story/Line1.svg"

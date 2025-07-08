@@ -33,8 +33,8 @@ const footerData = {
     ],
     services: [
         { label: 'Web Design & Development', href: '/#service' },
-        { label: 'UI/UX Design',  href: '/#service' },
-        { label: 'Mobile App Design',  href: '/#service' },
+        { label: 'UI/UX Design', href: '/#service' },
+        { label: 'Mobile App Design', href: '/#service' },
         { label: 'Cloud & Web Solution', href: '/#service' },
         { label: 'IT Consulting & Support', href: '/#service' },
     ],
@@ -57,17 +57,17 @@ const footerData = {
             text: '+88 013393-14661',
             href: "#",
         },
-        {
-            icon: companyIcon,
-            text: '57 Innovation Drive, Tech Valley Park, San Francisco, CA 94107, USA',
-            href: "#",
-        },
+        // {
+        //     icon: companyIcon,
+        //     text: '57 Innovation Drive, Tech Valley Park, San Francisco, CA 94107, USA',
+        //     href: "#",
+        // },
     ],
 };
 
 const Footer = () => {
     return (
-        <div className='relative bg-green text-white w-full pt-52 pb-10 mt-20 md:mt-60'>
+        <div className='relative bg-deepblue text-white w-full pt-52 pb-10 mt-20 md:mt-60'>
             {/* Floating Above Card */}
             <div className='flex justify-center items-center absolute z-50 -top-20 md:-top-52 left-0 right-0 mx-10'>
                 <FooterAboveCard />
@@ -90,7 +90,7 @@ const Footer = () => {
                         <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
                             {footerData.quickLinks.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
+                                    <a href={item.href} className='hover:text-lightblue cursor-pointer'>
                                         {item.label}
                                     </a>
                                 </li>
@@ -104,7 +104,7 @@ const Footer = () => {
                         <ul className='space-y-1 text-sm text-[#FFFFFF]/48'>
                             {footerData.services.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.href} className='hover:text-orange-400 cursor-pointer'>
+                                    <a href={item.href} className='hover:text-lightblue cursor-pointer'>
                                         {item.label}
                                     </a>
                                 </li>
@@ -118,7 +118,7 @@ const Footer = () => {
                         <ul className='space-y-2 text-sm text-[#FFFFFF]/48'>
                             {footerData.socialMedia.map((item, index) => (
                                 <li key={index} >
-                                    <a href={item.href} className='flex items-center gap-2 hover:text-orange cursor-pointer'>
+                                    <a href={item.href} className='flex items-center gap-2 hover:text-lightblue cursor-pointer'>
                                         <Image src={item.icon} alt={item.name} width={18} height={18} className='h-auto w-auto' />
                                         {item.name}
                                     </a>
@@ -135,7 +135,7 @@ const Footer = () => {
                     <ul className='space-y-2 text-sm text-[#FFFFFF]/48'>
                         {footerData.contact.map((item, index) => (
                             <li key={index} >
-                                <a href={item.href} className='flex items-center gap-2 hover:text-orange cursor-pointer'>
+                                <a href={item.href} className='flex items-center gap-2 hover:text-lightblue cursor-pointer'>
 
                                     <Image src={item.icon} alt={item.text} width={16} height={16} className='h-auto w-auto' />
 
@@ -152,12 +152,18 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row justify-between md:mx-10'>
                     <p>© 2025 Sparrow Forge Ltd. All rights reserved.</p>
                     <div className='flex gap-4 mt-2 md:mt-0'>
-                        <a href='/privacyPolicy' className='hover:text-orange'>
+                        <p className='hover:text-lightblue'>
+                            Privacy policy
+                        </p>
+                        <p className='hover:text-lightblue'>
+                            Terms of service
+                        </p>
+                        {/* <a href='/privacyPolicy' className='hover:text-lightblue'>
                             Privacy policy
                         </a>
-                        <a href='/termsOfService' className='hover:text-orange'>
+                        <a href='/termsOfService' className='hover:text-lightblue'>
                             Terms of service
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 

@@ -58,7 +58,7 @@ const ContactForm = () => {
                         placeholder="Write Your Fullname"
                         value={formData.fullName}
                         onChange={handleChange}
-                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange"
+                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lightblue"
                         required
                     />
                 </div>
@@ -71,7 +71,7 @@ const ContactForm = () => {
                         placeholder="Enter your email so can we connect with you"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange"
+                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lightblue"
                         required
                     />
                 </div>
@@ -83,7 +83,7 @@ const ContactForm = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Regarding Products"
-                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange"
+                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lightblue"
                         required
                     />
 
@@ -97,7 +97,7 @@ const ContactForm = () => {
                         placeholder="Write a message"
                         onChange={handleChange}
                         rows={3}
-                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange"
+                        className="w-full border border-gray rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lightblue"
                         required
                     />
                 </div>
@@ -115,22 +115,22 @@ const ContactForm = () => {
                 </div>
 
                 <div className="mt-4  hidden md:block">
-                    <div className='border border-orange p-1 rounded-full  text-[10px] md:text-[18px] mt-4'>
+                    <div className='border border-lightblue p-1 rounded-full  text-[10px] md:text-[18px] mt-4'>
                         <Button
                             image="/bannerImg/arrowRightUp.svg"
                             type="submit"
                             title="Submit"
-                            className="bg-orange text-white text-sm md:text-[20px] px-4 md:w-full py-2 md:py-2 rounded-full flex justify-center" />
+                            className="bg-lightblue text-white text-sm md:text-[20px] px-4 md:w-full py-2 md:py-2 rounded-full flex justify-center" />
                     </div>
 
                 </div>
                 <div className="mt-4  flex justify-center md:hidden">
-                    <div className='border border-orange p-1 rounded-full  text-[10px] md:text-[18px] mt-4'>
+                    <div className='border border-lightblue p-1 rounded-full  text-[10px] md:text-[18px] mt-4'>
                         <Button
                             image="/bannerImg/arrowRightUp.svg"
                             type="submit"
                             title="Submit"
-                            className="bg-orange text-white text-sm md:text-[20px] px-4 md:w-full py-2 md:py-2 rounded-full flex justify-center" />
+                            className="bg-lightblue text-white text-sm md:text-[20px] px-4 md:w-full py-2 md:py-2 rounded-full flex justify-center" />
                     </div>
                 </div>
             </form>

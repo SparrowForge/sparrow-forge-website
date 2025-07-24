@@ -14,7 +14,7 @@ const OurStoryDesignRight = () => {
             </div>
 
             {/* Right Side */}
-            <div className='flex flex-col md:flex-row justify-between  gap-6 '>
+            <div className='flex flex-row justify-between gap-2 md:gap-6 '>
                 <div className='flex flex-col justify-between items-start gap-2'>
                     <div className='bg-lightblue rounded-[24px]'>
                         <Image

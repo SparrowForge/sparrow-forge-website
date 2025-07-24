@@ -5,7 +5,7 @@ import Title from '../shared/Title';
 
 const OurProjectBanner = () => {
     return (
-        <div className='mx-4 md:mx-10 md:py-10 '>
+        <div className='mx-2 md:mx-10 md:py-10 '>
             <ButtonTitle title="Real Stories 🖼️" />
             <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
                 <div className='w-full md:w-2/4'>

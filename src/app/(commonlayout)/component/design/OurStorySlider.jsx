@@ -74,7 +74,7 @@ const OurStorySlider = () => {
                                 <h2 className="text-[28px]  font-bold mb-1 drop-shadow-lg">
                                     {item.name}
                                 </h2>
-                                <p className="text-[14px] md:mr-[80vh] ">
+                                <p className="text-[14px] md:mr-[80vh] xl:mr-[60vh] ">
                                     {item.subtitle}
                                 </p>
                             </div>

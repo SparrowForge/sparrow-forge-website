@@ -14,7 +14,7 @@ const data = [
 
 const TrustedBy = () => {
   return (
-    <div className="my-10 md:my-20 md:mx-48 opacity-40 flex flex-col ">
+    <div className="my-10 md:my-20 md:mx-52 opacity-40 flex flex-col ">
         <h1 className="text-center text-[28px] uppercase font-bold my-10">Trusted by startups and global teams</h1>
       <Marquee pauseOnHover speed={50} gradient={false}>
         {data.map((item) => (

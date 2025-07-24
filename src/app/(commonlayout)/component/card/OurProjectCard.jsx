@@ -65,9 +65,9 @@ const OurProjectCard = () => {
                     <div className="p-4 bg-white rounded-3xl ">
                         <div className="flex items-center mb-3 opacity-50">
                             {item.category.map((cat, index) => (
-                                <div className="flex justify-center items-center">
+                                <div className="flex justify-center items-center" key={index}>
                                     <p
-                                        key={index}
+                                        
                                         className="text-[12px] "
                                     >
                                         {cat.catname}

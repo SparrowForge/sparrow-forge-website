@@ -14,7 +14,7 @@ import ScrollToTop from "./component/shared/ScrollToTop";
 
 export default function Home() {
   return (
-    <div className="w-[100%] mx-auto  min-h-screen font-urbanist">
+    <div className="w-full xl:max-w-[1400px] mx-auto  min-h-screen font-urbanist xl:my-10 md:mx-10 ">
       <MainBanner />
       <TrustedBy/>
       <AboutUs/>

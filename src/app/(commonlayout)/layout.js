@@ -10,10 +10,10 @@ export const metadata = {
 
 export default function CommonLayout({ children }) {
   return (
-<div>
-        <Navbar/>
-        {children}
-        <Footer/>
-      </div>
+    <div className="md:flex flex-col justify-center items-center">
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
   );
 }

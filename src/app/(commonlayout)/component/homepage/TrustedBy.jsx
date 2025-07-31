@@ -8,7 +8,7 @@ const data = [
   { id: 1, name: "BAC (British American College)", image: "/Client_List/bacbd-logo.png",href:"https://www.bacbd.org" },
   { id: 2, name: "Event World BD", image: "/Client_List/eventworldbd.png" ,href:"https://eventworldbd.com" },
   { id: 3, name: "Holy Seed Agro", image: "/Client_List/holyseedagro.png" ,href:"#"},
-  // { id: 4, name: "Quotient", image: "/trustedby/3.svg" },
+  { id: 4, name: "Cryto Wallet", image: "" ,href:"https://vtroncard.com"},
   // { id: 5, name: "Acme Corp", image: "/trustedby/4.svg" },
   // { id: 6, name: "Boltshift", image: "/trustedby/5.svg" },
 ];
@@ -21,13 +21,17 @@ const TrustedBy = () => {
         {data.map((item) => (
           <div key={item.id} >
          <Link href={item?.href} target="_blank" className="mx-8 flex items-center justify-center gap-2 md:gap-3">
-            <Image
-              src={item.image}
-              alt={item.name}
-              width={100}
-              height={100}
-              className="object-contain"
-            />
+        {item.image && (
+  <Image
+    src={item.image}
+    alt={item.name}
+    width={100}
+    height={100}
+    className="object-contain"
+  />
+)}
+
+         
             <p className="text-[20px] font-bold">{item.name}</p>
          </Link>
           </div>

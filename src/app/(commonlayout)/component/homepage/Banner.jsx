@@ -10,7 +10,7 @@ const Banner = () => {
                 layout="fill" // makes the image fill the parent container
                 objectFit="cover" // maintain aspect ratio
                 priority // optional: for faster loading
-                className="rounded-4xl 2xl:rounded-[46px] 2xl:px-4 "
+                className="md:rounded-4xl 2xl:rounded-[46px] 2xl:px-4 "
             />
         </div>
     );

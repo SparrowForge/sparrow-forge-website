@@ -9,8 +9,7 @@ const data = [
   { id: 2, name: "Event World BD", image: "/Client_List/eventworldbd.png" ,href:"https://eventworldbd.com" },
   { id: 3, name: "Holy Seed Agro", image: "/Client_List/holyseedagro.png" ,href:"#"},
   { id: 4, name: "Cryto Wallet", image: "" ,href:"https://vtroncard.com"},
-  // { id: 5, name: "Acme Corp", image: "/trustedby/4.svg" },
-  // { id: 6, name: "Boltshift", image: "/trustedby/5.svg" },
+  { id: 5, name: "CLAR", image: "/Client_List/CLAR.png",href:"https://clar.pt" },
 ];
 
 const TrustedBy = () => {

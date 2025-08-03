@@ -1,5 +1,6 @@
 
 import AboutUs from "./component/homepage/AboutUs";
+import Banner from "./component/homepage/Banner";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
 import Innovation from "./component/homepage/Innovation";
 import MainBanner from "./component/homepage/MainBanner";
@@ -14,7 +15,8 @@ import ScrollToTop from "./component/shared/ScrollToTop";
 
 export default function Home() {
   return (
-    <div className="w-full xl:max-w-[1400px] mx-auto  min-h-screen font-urbanist xl:my-10 md:mx-10 ">
+    <div className="w-full xl:max-w-[1400px] mx-auto  min-h-screen font-urbanist xl:mb-10 md:mx-10 ">
+      <Banner/>
       <MainBanner />
       <TrustedBy/>
       <AboutUs/>

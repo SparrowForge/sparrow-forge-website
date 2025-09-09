@@ -10,6 +10,7 @@ import OurProjects from "./component/homepage/OurProjects";
 import OurServices from "./component/homepage/OurServices";
 import OurStory from "./component/homepage/OurStory";
 import TestimonialSection from "./component/homepage/TestimonialSection";
+import TransformIdeas from "./component/homepage/TransformIdeas";
 import TrustedBy from "./component/homepage/TrustedBy";
 import ScrollToTop from "./component/shared/ScrollToTop";
 
@@ -18,6 +19,8 @@ export default function Home() {
     <div className="w-full xl:max-w-[1400px] mx-auto  min-h-screen font-urbanist xl:mb-10 md:mx-10 ">
       <Banner/>
       <MainBanner />
+     
+      <TransformIdeas/>  {/* new component  */}
       <TrustedBy/>
       <AboutUs/>
       <OurLatestBlog/>

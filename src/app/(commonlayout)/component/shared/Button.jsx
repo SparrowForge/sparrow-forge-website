@@ -5,7 +5,7 @@ const Button = ({ title, className, image }) => {
     return (
 
         <button className={className}>
-            <div className='flex justify-between items-center gap-2'>
+            <div className='flex justify-between items-center gap-2 '>
                 <span>{title}</span>
                 {image && (
                     <Image

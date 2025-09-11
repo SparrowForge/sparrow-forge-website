@@ -11,8 +11,8 @@ const Button = ({ title, className, image }) => {
                     <Image
                         src={image}
                         alt="arrow"
-                        width={12}
-                        height={12}
+                        width={10}
+                        height={10}
                         className="inline-block h-auto w-auto"
                     />
                 )}

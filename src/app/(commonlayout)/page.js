@@ -2,6 +2,7 @@
 import AboutUs from "./component/homepage/AboutUs";
 import Banner from "./component/homepage/Banner";
 import CompleteSupportTechStack from "./component/homepage/CompleteSupportTechStack";
+import Estimated from "./component/homepage/Estimated";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
 import Innovation from "./component/homepage/Innovation";
 import MainBanner from "./component/homepage/MainBanner";
@@ -22,7 +23,9 @@ export default function Home() {
       <MainBanner />
      
       <TransformIdeas/>  {/* new component  */}
+      <Estimated/>{/* new component  */}
       <CompleteSupportTechStack/> {/* new component  */}
+      
       <TrustedBy/>
       <AboutUs/>
       <OurLatestBlog/>

@@ -42,10 +42,10 @@ const Estimated = () => {
     const current = content[activeTab];
 
     return (
-        <div className="w-full bg-deepblue text-white  p-10 md:p-16 ">
-            <div className="md:w-[1194px] mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="w-full bg-deepblue text-white  py-10 px-4 md:p-16 ">
+            <div className="w-full md:w-[1194px] md:mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
                 {/* Left Content */}
-                <div className="w-1/2 space-y-6">
+                <div className="md:w-1/2 space-y-6">
                     {/* Tabs */}
                     <div className="flex gap-3 ">
                         <div className="rounded-full justify-start items-start bg-lightblue/10 p-2">
@@ -88,7 +88,7 @@ const Estimated = () => {
                 </div>
 
                 {/* Right Content */}
-                <div className="w-1/2 relative flex justify-center">
+                <div className="w-full md:w-1/2 relative flex justify-center">
                     <Image
                         src={current.image}
                         alt="Team"
@@ -98,14 +98,33 @@ const Estimated = () => {
                     />
 
                     {/* Stats */}
-                    <div className="absolute bottom-4 left-4 bg-gray-600 px-6 py-4 rounded-xl text-sm shadow-md w-40">
-                        <p className="text-3xl font-bold">{current.stats[0].value}</p>
+                    {/* Stats */}
+                    <div className="absolute 
+  -bottom-4 left-1/2 -translate-x-1/2 
+  md:bottom-4 md:left-4 md:translate-x-0
+  bg-gray-600 px-2 sm:px-4 md:px-6 py-3 
+  rounded-xl text-xs sm:text-sm shadow-md 
+  w-24 sm:w-32 md:w-40 text-center md:text-left"
+                    >
+                        <p className="text-lg sm:text-xl md:text-3xl font-bold">
+                            {current.stats[0].value}
+                        </p>
                         <p className="text-gray-300">{current.stats[0].label}</p>
                     </div>
-                    <div className="absolute top-4 right-4 bg-gray-600 px-5 py-4 rounded-xl text-xs shadow-md w-40">
-                        <p className="text-3xl font-bold">{current.stats[1].value}</p>
+
+                    <div className="absolute 
+  -top-10 right-1/2 translate-x-1/2 
+  md:top-4 md:right-4 md:translate-x-0
+  bg-gray-600 px-2 sm:px-4 md:px-5 py-3 
+  rounded-xl text-xs sm:text-sm shadow-md 
+  w-24 sm:w-32 md:w-40 text-center md:text-right"
+                    >
+                        <p className="text-lg sm:text-xl md:text-3xl font-bold">
+                            {current.stats[1].value}
+                        </p>
                         <p className="text-gray-300">{current.stats[1].label}</p>
                     </div>
+
                 </div>
             </div>
         </div>

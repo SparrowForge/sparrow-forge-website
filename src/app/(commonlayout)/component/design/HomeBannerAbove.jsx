@@ -17,7 +17,7 @@ const HomeBannerAbove = () => {
 
             </div>
             <h1 className="text-xl md:text-[80px] text-white font-bold text-start">
-                Build Your <br /> <span className="text-yellow-500">Dream Product</span> <br /> in 4x Faster
+                Build Your <br /> <span className="text-yellow-500">Dream Product</span> <br /> in 2x Faster
             </h1>
             <p className="text-[12px] md:text-[20px] text-gray/40 font-[500px] text-start">From startups to enterprises—build scalable products 4x faster with our expert teams and proven processes </p>
 

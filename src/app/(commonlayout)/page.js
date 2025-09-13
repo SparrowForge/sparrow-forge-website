@@ -2,6 +2,7 @@
 import AboutUs from "./component/homepage/AboutUs";
 import Banner from "./component/homepage/Banner";
 import ClearSteps from "./component/homepage/ClearSteps";
+import ClientsSays from "./component/homepage/ClientsSays";
 import CompleteSupportTechStack from "./component/homepage/CompleteSupportTechStack";
 import Estimated from "./component/homepage/Estimated";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
@@ -21,25 +22,28 @@ import ScrollToTop from "./component/shared/ScrollToTop";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center w-full  min-h-screen font-urbanist xl:mb-10 md:mx-10 ">
-    
+
       {/* <MainBanner />  */}
-      <Banner/>{/* new component  */}
+      <Banner />{/* new component  */}
       <TransformIdeas />  {/* new component  */}
 
       <CompleteSupportTechStack /> {/* new component  */}
       <OptimizedDevelopment />{/* new component  */}
       <Estimated />{/* new component  */}
-      <ClearSteps/>{/* new component  */}
+      <ClearSteps />{/* new component  */}
       <TrustedBy />
-      <AboutUs />
-      <OurLatestBlog />
-      <OurGlobalFamily />
-      <IndustriesWeServe />
-      <OurServices />
-      <OurProjects />
-      <OurStory />
-      <Innovation />
-      <TestimonialSection />
+      {/* <AboutUs /> */}
+      {/* <OurLatestBlog /> */}
+      {/* <OurGlobalFamily /> */}
+      {/* <IndustriesWeServe /> */}
+      {/* <OurServices /> */}
+      {/* <OurProjects /> */}
+      {/* <OurStory /> */}
+      {/* <Innovation /> */}
+
+      <ClientsSays />{/* new component  */}
+      {/* <TestimonialSection /> */}
+
       <ScrollToTop />
     </div>
   );

@@ -13,11 +13,11 @@ const Banner = () => {
                 backgroundPosition: "center",
             }} >
 
-            <div className='md:w-[1194px] mx-auto '>
+            <div className='lg:w-[1480px] mx-auto '>
                 <Navbar />
-                <div className='flex justify-between items-center mx-10'>
+                <div className='flex flex-col md:flex-row justify-between items-center'>
                     <HomeBannerAbove />
-                    {/* <BannerCard /> */}
+                    <BannerCard />
                 </div>
             </div>
         </div>

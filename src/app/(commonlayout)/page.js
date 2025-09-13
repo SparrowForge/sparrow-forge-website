@@ -1,11 +1,13 @@
 
 import AboutUs from "./component/homepage/AboutUs";
 import Banner from "./component/homepage/Banner";
+import ClearSteps from "./component/homepage/ClearSteps";
 import CompleteSupportTechStack from "./component/homepage/CompleteSupportTechStack";
 import Estimated from "./component/homepage/Estimated";
 import IndustriesWeServe from "./component/homepage/IndustriesWeServe";
 import Innovation from "./component/homepage/Innovation";
 import MainBanner from "./component/homepage/MainBanner";
+import OptimizedDevelopment from "./component/homepage/OptimizedDevelopment";
 import OurGlobalFamily from "./component/homepage/OurGlobalFamily";
 import OurLatestBlog from "./component/homepage/OurLatestBlog";
 import OurProjects from "./component/homepage/OurProjects";
@@ -18,25 +20,27 @@ import ScrollToTop from "./component/shared/ScrollToTop";
 
 export default function Home() {
   return (
-    <div className="w-full xl:max-w-[1400px] mx-auto  min-h-screen font-urbanist xl:mb-10 md:mx-10 ">
-      <Banner/>
-      <MainBanner />
-     
-      <TransformIdeas/>  {/* new component  */}
-      <Estimated/>{/* new component  */}
-      <CompleteSupportTechStack/> {/* new component  */}
-      
-      <TrustedBy/>
-      <AboutUs/>
-      <OurLatestBlog/>
-      <OurGlobalFamily/> 
-      <IndustriesWeServe/>
-      <OurServices/>
-      <OurProjects/>
-      <OurStory/>   
-      <Innovation/>
+    <div className="flex flex-col justify-center items-center w-full  min-h-screen font-urbanist xl:mb-10 md:mx-10 ">
+    
+      {/* <MainBanner />  */}
+      <Banner/>{/* new component  */}
+      <TransformIdeas />  {/* new component  */}
+
+      <CompleteSupportTechStack /> {/* new component  */}
+      <OptimizedDevelopment />{/* new component  */}
+      <Estimated />{/* new component  */}
+      <ClearSteps/>{/* new component  */}
+      <TrustedBy />
+      <AboutUs />
+      <OurLatestBlog />
+      <OurGlobalFamily />
+      <IndustriesWeServe />
+      <OurServices />
+      <OurProjects />
+      <OurStory />
+      <Innovation />
       <TestimonialSection />
-    <ScrollToTop/>
+      <ScrollToTop />
     </div>
   );
 }

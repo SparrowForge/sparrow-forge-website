@@ -42,68 +42,70 @@ const Estimated = () => {
     const current = content[activeTab];
 
     return (
-        <div className="bg-deepblue text-white  p-10 md:p-16 flex flex-col md:flex-row items-center gap-10">
-            {/* Left Content */}
-            <div className="flex-1 space-y-6">
-                {/* Tabs */}
-                <div className="flex gap-3 ">
-                    <div className="rounded-full justify-start items-start bg-lightblue/10 p-2">
-                        <button
-                            onClick={() => setActiveTab("about")}
-                            className={`px-4 py-1 rounded-full text-sm transition ${activeTab === "about"
-                                ? "bg-white text-deepblue font-semibold"
-                                : ""
-                                }`}
-                        >
-                            About Us
-                        </button>
-                        <button
-                            onClick={() => setActiveTab("who")}
-                            className={`px-4 py-1 rounded-full text-sm transition ${activeTab === "who"
-                                ? "bg-white text-deepblue font-semibold"
-                                : ""
-                                }`}
-                        >
-                            Who We Are
-                        </button>
+        <div className="w-full bg-deepblue text-white  p-10 md:p-16 ">
+            <div className="md:w-[1194px] mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
+                {/* Left Content */}
+                <div className="w-1/2 space-y-6">
+                    {/* Tabs */}
+                    <div className="flex gap-3 ">
+                        <div className="rounded-full justify-start items-start bg-lightblue/10 p-2">
+                            <button
+                                onClick={() => setActiveTab("about")}
+                                className={`px-4 py-1 rounded-full text-sm transition ${activeTab === "about"
+                                    ? "bg-white text-deepblue font-semibold"
+                                    : ""
+                                    }`}
+                            >
+                                About Us
+                            </button>
+                            <button
+                                onClick={() => setActiveTab("who")}
+                                className={`px-4 py-1 rounded-full text-sm transition ${activeTab === "who"
+                                    ? "bg-white text-deepblue font-semibold"
+                                    : ""
+                                    }`}
+                            >
+                                Who We Are
+                            </button>
+                        </div>
+
                     </div>
 
+                    {/* Title */}
+                    <h2 className="text-2xl md:text-4xl font-bold leading-snug">
+                        {current.title}
+                    </h2>
+
+                    {/* Description */}
+                    <p className="text-gray-300">{current.description}</p>
+
+                    {/* CTA */}
+                    <Button
+                        image="/bannerImg/arrowRightUpWhite.svg"
+                        title="About Us"
+                        className="bg-lightblue text-white text-sm md:text-[14px] px-4 py-2 rounded-full " />
+
                 </div>
 
-                {/* Title */}
-                <h2 className="text-2xl md:text-4xl font-bold leading-snug">
-                    {current.title}
-                </h2>
+                {/* Right Content */}
+                <div className="w-1/2 relative flex justify-center">
+                    <Image
+                        src={current.image}
+                        alt="Team"
+                        width={400}
+                        height={300}
+                        className="rounded-xl object-cover"
+                    />
 
-                {/* Description */}
-                <p className="text-gray-300">{current.description}</p>
-
-                {/* CTA */}
-                <Button
-                    image="/bannerImg/arrowRightUpWhite.svg"
-                    title="About Us"
-                    className="bg-lightblue text-white text-sm md:text-[14px] px-4 py-2 rounded-full " />
-
-            </div>
-
-            {/* Right Content */}
-            <div className="flex-1 relative flex justify-center">
-                <Image
-                    src={current.image}
-                    alt="Team"
-                    width={400}
-                    height={300}
-                    className="rounded-xl object-cover"
-                />
-
-                {/* Stats */}
-                <div className="absolute bottom-4 left-4 bg-gray-600 px-6 py-4 rounded-xl text-sm shadow-md w-40">
-                    <p className="text-3xl font-bold">{current.stats[0].value}</p>
-                    <p className="text-gray-300">{current.stats[0].label}</p>
-                </div>
-                <div className="absolute top-4 right-4 bg-gray-600 px-5 py-4 rounded-xl text-xs shadow-md w-40">
-                    <p className="text-3xl font-bold">{current.stats[1].value}</p>
-                    <p className="text-gray-300">{current.stats[1].label}</p>
+                    {/* Stats */}
+                    <div className="absolute bottom-4 left-4 bg-gray-600 px-6 py-4 rounded-xl text-sm shadow-md w-40">
+                        <p className="text-3xl font-bold">{current.stats[0].value}</p>
+                        <p className="text-gray-300">{current.stats[0].label}</p>
+                    </div>
+                    <div className="absolute top-4 right-4 bg-gray-600 px-5 py-4 rounded-xl text-xs shadow-md w-40">
+                        <p className="text-3xl font-bold">{current.stats[1].value}</p>
+                        <p className="text-gray-300">{current.stats[1].label}</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -27,7 +27,7 @@ const bannerData = [
 
 const BannerCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 md:mx-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-4 md:mx-0">
       {bannerData.map((item) => (
         <div key={item.id} className="bg-white p-4 rounded-2xl shadow-md text-center">
           <Image

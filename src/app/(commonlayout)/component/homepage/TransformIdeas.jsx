@@ -6,7 +6,7 @@ import TransformIdeasHeader from '../design/TransformIdeasHeader';
 const TransformIdeas = () => {
     return (
         <div
-            className='mx-4 md:mx-10 py-20 '
+            className='md:w-[1194px] mx-auto   py-20 '
         >
            <TransformIdeasHeader/>
             <TransformIdeasCard />

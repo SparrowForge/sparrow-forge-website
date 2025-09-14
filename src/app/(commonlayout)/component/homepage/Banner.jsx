@@ -13,7 +13,7 @@ const Banner = () => {
                 backgroundPosition: "center",
             }} >
 
-            <div className='lg:w-[1480px] mx-auto '>
+            <div className='lg:w-[1194px] mx-auto '>
                 <Navbar />
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                     <HomeBannerAbove />

@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 
 const ClientsSaysCard = ({ item }) => {
   return (
-    <div className="bg-white rounded-2xl shadow p-6 h-64">
+    <div className="bg-white rounded-2xl shadow p-6 h-[260px]">
       {/* Profile */}
       <div className="flex items-center gap-4 mb-4">
         <img
@@ -20,7 +20,7 @@ const ClientsSaysCard = ({ item }) => {
 
       {/* Number */}
 <div className="flex items-center ">
-  <p className="text-sm text-gray-400 font-semibold border-t p-2 rounded-full">{item.number}</p>
+  <p className="text-[18px] text-gray-300 font-semibold border-t p-2 rounded-full">{item.number}</p>
   <div className="flex-1 h-0.5 bg-gray rounded-full"></div>
 </div>
 

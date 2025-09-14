@@ -5,7 +5,7 @@ import ClientsSaysSlider from '../design/ClientsSaysSlider';
 const ClientsSays = () => {
     return (
         <div className='bg-lightblue/10 w-full'>
-            <div className="md:w-[1194px] mx-auto flex flex-col items-start">
+            <div className="md:w-[1194px] mx-auto flex flex-col items-start py-10 px-4">
                 <ClientsSaysHeader />
                 <ClientsSaysSlider/>
             </div>

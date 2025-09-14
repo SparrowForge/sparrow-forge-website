@@ -1,6 +1,7 @@
 "use client"
 
-import { sendEmail } from "@/lib/resend";
+
+// import { sendEmail } from "@/lib/resend";
 import Button from "../shared/Button";
 import ButtonTitle from "../shared/ButtonTitle";
 import { useState } from "react";

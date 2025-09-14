@@ -66,7 +66,7 @@ export default function BannerCardSlider() {
   const bottomRight = bannerData[(index + 2) % bannerData.length];
 
   const Card = ({ item }) => (
-    <div className="relative bg-white py-6 px-4 sm:px-6 rounded-2xl shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl w-full sm:w-[320px] md:w-[350px] h-auto">
+    <div className="relative bg-white px-6 py-8 rounded-2xl shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl w-full sm:w-[320px] md:w-[350px] h-auto">
       <Image
         src={item.image}
         alt={item.title}
@@ -74,8 +74,8 @@ export default function BannerCardSlider() {
         height={40}
         className="mx-auto mb-4"
       />
-      <h3 className="text-base sm:text-lg font-semibold text-center">{item.title}</h3>
-      <p className="text-xs sm:text-sm text-gray-600 text-center mt-2">
+      <h3 className="text-[16px]  font-semibold text-center">{item.title}</h3>
+      <p className="text-xs  text-gray-600 text-center mt-2">
         {item.description}
       </p>
     </div>
@@ -89,7 +89,7 @@ export default function BannerCardSlider() {
       </div>
 
       {/* Bottom row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 sm:mt-16 w-full px-4 sm:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 sm:mt-16 w-full ">
         <div className="flex justify-center transition-all duration-700 transform hover:-translate-y-2">
           <Card item={bottomLeft} />
         </div>

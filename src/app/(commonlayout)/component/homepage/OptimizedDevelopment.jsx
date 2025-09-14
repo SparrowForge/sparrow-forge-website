@@ -4,16 +4,16 @@ import OptimizedDevelopmentRight from "../design/OptimizedDevelopmentRight";
 
 const OptimizedDevelopment = () => {
     return (
-        <div className="relative w-full  h-[1400px] py-20 bg-lightblue/10"
+        <div className="relative w-full py-10 md:py-20 bg-lightblue/10"
             style={{
-                backgroundImage: "url('/newDesign/growing/patternBig.svg')",
+                backgroundImage: "url('/newDesign/growing/PatternBig.svg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
-            <div className="md:w-[1194px] mx-auto flex flex-col md:flex-row items-start">
-                {/* Left text section sticks while scrolling */}
-                <div className="w-1/2 sticky top-10  self-start">
+            <div className="max-w-[1194px] mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
+                {/* Left Section */}
+                <div className="w-full md:w-1/2 md:sticky md:top-20 self-start">
                     <OptimizedDevelopmentLeft />
                 </div>
 

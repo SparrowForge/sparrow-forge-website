@@ -6,7 +6,7 @@ const ClearStepsCard = ({ step,
     des1,
     des2,
     des3, }) => (
-    <div className="bg-white shadow-md rounded-xl p-6 w-[300px] md:w-[450px] flex flex-col gap-4">
+    <div className="bg-white shadow-md rounded-xl p-6 w-[320px] md:w-[450px] flex flex-col gap-4">
         {/* Step + Icon */}
         <div className="flex items-center justify-between gap-3">
             <div className='bg-lightblue/20 rounded-full p-3'>

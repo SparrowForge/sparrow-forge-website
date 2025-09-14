@@ -78,7 +78,6 @@ const ClientsSaysSlider = () => {
     <div className="w-full py-10 relative">
       <Swiper
         spaceBetween={20}
-        slidesPerView={3}
         modules={[Navigation]}
         className="px-6"
         onSwiper={(swiper) => {
@@ -90,6 +89,11 @@ const ClientsSaysSlider = () => {
           setIsBeginning(swiper.isBeginning);
           setIsEnd(swiper.isEnd);
         }}
+        breakpoints={{
+          0: { slidesPerView: 1 },     // default small
+          1024: { slidesPerView: 3 },  // large screens
+        }}
+
       >
         {testimonials.map((item) => (
           <SwiperSlide key={item.id}>
@@ -102,31 +106,27 @@ const ClientsSaysSlider = () => {
       <div className="flex justify-center mt-6 gap-4">
         <button
           onClick={() => swiperInstance?.slidePrev()}
-          className={`p-2 rounded-full border transition-colors ${
-            isBeginning
-              ? " border-lightblue"
-              : "bg-lightblue hover:bg-blue-600 border-lightblue"
-          }`}
+          className={`p-2 rounded-full border transition-colors ${isBeginning
+            ? " border-lightblue"
+            : "bg-lightblue hover:bg-blue-600 border-lightblue"
+            }`}
         >
           <FaAngleLeft
-            className={`text-2xl ${
-              isBeginning ? "text-lightblue" : "text-white"
-            }`}
+            className={`text-2xl ${isBeginning ? "text-lightblue" : "text-white"
+              }`}
           />
         </button>
 
         <button
           onClick={() => swiperInstance?.slideNext()}
-          className={`p-2 rounded-full border transition-colors ${
-            isEnd
-              ? " border-lightblue"
-              : "bg-lightblue hover:bg-blue-600 border-lightblue"
-          }`}
+          className={`p-2 rounded-full border transition-colors ${isEnd
+            ? " border-lightblue"
+            : "bg-lightblue hover:bg-blue-600 border-lightblue"
+            }`}
         >
           <FaAngleRight
-            className={`text-2xl ${
-              isEnd ? "text-lightblue" : "text-white"
-            }`}
+            className={`text-2xl ${isEnd ? "text-lightblue" : "text-white"
+              }`}
           />
         </button>
       </div>

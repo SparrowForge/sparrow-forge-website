@@ -3,8 +3,8 @@ import Button from '../shared/Button';
 
 const ClearStepsLeft = () => {
     return (
-      <div className="flex-1 flex flex-col justify-center gap-6 px-6 md:px-12">
-            <h2 className="text-2xl md:text-[62px] font-bold leading-snug text-deepblue">
+      <div className="flex-1 flex flex-col justify-center gap-6 mx-6 md:mx-0">
+            <h2 className="text-3xl md:text-[62px] font-bold leading-snug text-deepblue">
               Clear steps that make growing easier for you
             </h2>
             <p className="text-gray-600 leading-relaxed max-w-lg">

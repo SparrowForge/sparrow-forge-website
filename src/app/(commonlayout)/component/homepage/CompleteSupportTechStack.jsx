@@ -18,7 +18,7 @@ const data = [
 const CompleteSupportTechStack = () => {
     return (
         <div className="w-full md:w-[1194px] mx-auto my-10 md:my-20  flex flex-col gap-10">
-            <h1 className="text-center text-2xl md:text-[48px]  font-bold ">
+            <h1 className="text-center text-2xl md:text-[48px]  font-bold md:my-10">
                 Complete Support for Your <br /> Entire Tech Stack
             </h1>
 

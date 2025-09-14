@@ -66,7 +66,7 @@ const ClearStepsRight = () => {
   }, []);
 
   return (
-    <div className="flex-1 relative h-full flex justify-center">
+    <div className="flex-1 relative h-full flex justify-center md:ml-32">
       <Swiper
         direction={"vertical"}
         slidesPerView={1}

@@ -92,9 +92,9 @@ const Estimated = () => {
                     <Image
                         src={current.image}
                         alt="Team"
-                        width={400}
-                        height={300}
-                        className="rounded-xl object-cover"
+                        width={450}
+                        height={450}
+                        className="rounded-xl object-cover md:h-[380px]"
                     />
 
                     {/* Stats */}

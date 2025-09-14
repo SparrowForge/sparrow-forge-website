@@ -3,7 +3,7 @@ import Button from '../shared/Button';
 
 const OptimizedDevelopmentLeft = () => {
     return (
-        <div className="flex-1 flex flex-col justify-center gap-6 px-6 md:px-12">
+        <div className="flex-1 flex flex-col justify-center gap-6 mx-6 md:mx-0">
             <h2 className="text-2xl md:text-[62px] font-bold leading-snug text-deepblue">
                 Excellence in <br /> AI-Optimized Development
             </h2>

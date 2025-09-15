@@ -40,23 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
-# Ignore build/cache
-.next/cache
-node_modules
-dist
-.vscode
-.git
-
-# Ignore logs
-*.log
-
-# Ignore big assets
-*.mp4
-*.zip
-*.tar
-*.psd
-*.ai
-*.mov
-
-
+.vercel

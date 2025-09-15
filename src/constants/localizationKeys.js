@@ -1,0 +1,37 @@
+export const LOCALE_KEYS = {
+
+  // Navbar
+  HOME: "HOME",
+  SERVICE: "SERVICE",
+  ABOUT_US: "ABOUT_US",
+  TEAMS: "TEAMS",
+  CAREER: "CAREER",
+  BLOG: "BLOG",
+  CONTACT_US: "CONTACT_US",
+
+  // Footer - Sections
+  QUICK_LINKS: "QUICK_LINKS",
+  SERVICES: "SERVICES",
+  FOLLOW_US: "FOLLOW_US",
+  GET_IN_TOUCH: "GET_IN_TOUCH",
+
+  // Footer - Services List
+  WEB_DEV: "WEB_DEV",
+  UI_UX: "UI_UX",
+  MOBILE_APP: "MOBILE_APP",
+  CLOUD_WEB: "CLOUD_WEB",
+  IT_CONSULT: "IT_CONSULT",
+
+  // Footer - Bottom
+  COPYRIGHT: "COPYRIGHT",
+  PRIVACY_POLICY: "PRIVACY_POLICY",
+  TERMS_OF_SERVICE: "TERMS_OF_SERVICE",
+  TURN_IDEAS: "TURN_IDEAS",
+  TURN_IDEAS_DESC: "TURN_IDEAS_DESC",
+  GET_STARTED: "GET_STARTED",
+};
+
+
+export const t = (key, values = {}) => {
+  return key;
+};

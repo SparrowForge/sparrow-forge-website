@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,9 +10,9 @@
   --color-title:#111113;
   --color-gray: #E9E9E9;
   --color-deepblue: #051641;
-  --color-lightblue: #2164F8;
+  --color-lightblue:#2164F8;
   --color-navtext: #5E5D5C;
-  --font-urbanist: 'Urbanist', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
   --text-title: "56px";
 
 }

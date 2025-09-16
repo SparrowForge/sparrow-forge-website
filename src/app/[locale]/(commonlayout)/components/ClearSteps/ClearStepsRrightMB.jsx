@@ -5,14 +5,15 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { LOCALE_KEYS } from "@/constants/localizationKeys";
-import { useLocalization } from "@/hooks/useLocalization";
+import { useTranslations } from "next-intl";
+import ClearStepsCard from "../../card/ClearStepsCard";
 
 
 const ClearStepsRrightMB = () => {
     const [swiperInstance, setSwiperInstance] = useState(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
-    const t = useLocalization();
+     const t  = useTranslations()
 
 
     const cards = [

@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from '../../shared/Button';
-import { useLocalization } from '@/hooks/useLocalization';
 import { LOCALE_KEYS } from '@/constants/localizationKeys';
+import { useTranslations } from 'next-intl';
+
 
 const ClearStepsLeft = () => {
-  const t = useLocalization();
+  const t  = useTranslations()
 
   return (
     <div className="flex-1 flex flex-col justify-center gap-6 mx-6 md:mx-0">

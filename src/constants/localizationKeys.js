@@ -183,6 +183,7 @@ export const LOCALE_KEYS = {
       DES3: "CLEARSTEPS_CARD4_DES3",
     },
   },
+   COMPLETE_SUPPORT_TITLE: "COMPLETE_SUPPORT_TITLE",
 };
 
 

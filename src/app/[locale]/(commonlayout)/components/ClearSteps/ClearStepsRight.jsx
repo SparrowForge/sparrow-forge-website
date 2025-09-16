@@ -9,9 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper/modules";
 import "swiper/css";
 import ClearStepsCard from "../../card/ClearStepsCard";
+import { useTranslations } from "next-intl";
 
 const ClearStepsRight = () => {
-  const t = useLocalization();
+  const  t = useTranslations();
   const swiperRef = useRef();
 
   const cards = [

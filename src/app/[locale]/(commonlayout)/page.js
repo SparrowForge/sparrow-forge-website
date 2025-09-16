@@ -1,6 +1,7 @@
 import Banner from "./HomePage/Banner/Banner";
 import CaseStudies from "./HomePage/CaseStudies/CaseStudies";
 import ClearSteps from "./HomePage/ClearSteps/ClearSteps";
+import CompleteSupportTechStack from "./HomePage/CompleteSupportTechStack/CompleteSupportTechStack";
 import Estimated from "./HomePage/Estimated/Estimated";
 import OptimizedDevelopment from "./HomePage/OptimizedDevelopment/OptimizedDevelopment";
 import OurGlobalFamily from "./HomePage/OurGlobalFamily/OurGlobalFamily";
@@ -23,6 +24,8 @@ export default function HomePage() {
       <Estimated />
       <OurGlobalFamily />
       <ClearSteps />
+      <CompleteSupportTechStack/>
+      
 
 
       <ScrollLanguage />

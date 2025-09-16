@@ -108,5 +108,20 @@
             "LEARNING": "Interactive video lectures, student progress tracking, and gamified assessments improved engagement by 60%."
         },
         "VIEW": "View Case Study"
-    }
+    },
+    "ABOUT": "About Us",
+    "WHO": "Who We Are",
+    "ABOUT_TITLE": "Established in <span>2012</span> driving digital growth globally.",
+    "ABOUT_DESCRIPTION": "We deliver innovative digital solutions that drive growth and transformation across industries, combining global expertise with a commitment to measurable results.",
+    "STATS_PROJECTS": "Successfully delivered projects",
+    "STATS_YEARS": "With over 15 years of experience",
+    "WHO_TITLE": "We are a <span>global team</span> driving innovation everywhere.",
+    "WHO_DESCRIPTION": "Our mission is to partner with startups and enterprises to co-create digital solutions, leveraging design thinking and modern technology to deliver impactful experiences.",
+    "STATS_TEAM": "Talented professionals",
+    "STATS_INDUSTRIES": "Industries served worldwide",
+    "our_global_family_title": "Our Global Family",
+    "our_global_family_subtitle": "Our international presence enables us to collaborate across cultures, solve complex challenges, and deliver scalable digital solutions that drive success worldwide.",
+    "CLEARSTEPS_TITLE": "Clear steps that make growing easier for you",
+    "CLEARSTEPS_DESCRIPTION": "We leverage advanced AI throughout every stage of development—accelerating delivery by 10X while ensuring top-tier reliability.\n\nOur team combines deep human expertise with AI-powered automation to streamline processes, enhance quality, and build software ready for the future.",
+    "CLEARSTEPS_BUTTON": "Get Started"
 }

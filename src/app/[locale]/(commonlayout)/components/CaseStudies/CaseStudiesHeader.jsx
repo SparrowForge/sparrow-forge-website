@@ -10,12 +10,12 @@ const CaseStudiesHeader = () => {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center md:gap-4">
+    <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-2 md:gap-4 p-2 md:p-0">
       <div className="w-full md:w-2/4">
         <Title
           title={t(LOCALE_KEYS.CASE_STUDIES_TITLE)}
           subtitle={t(LOCALE_KEYS.CASE_STUDIES_SUBTITLE)}
-          className="flex flex-col justify-center items-start gap-4 md:my-16"
+          className="flex flex-col justify-center items-start gap-0 md:gap-4 md:my-16"
         />
       </div>
       <Button

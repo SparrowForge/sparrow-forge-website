@@ -108,7 +108,22 @@
       "LEARNING": "Aulas em vídeo interativas, acompanhamento de progresso e avaliações gamificadas aumentaram o engajamento em 60%."
     },
     "VIEW": "Ver Estudo de Caso"
-  }
+  },
+  "ABOUT": "Sobre Nós",
+  "WHO": "Quem Somos",
+  "ABOUT_TITLE": "Fundada em <span>2012</span>, impulsionando o crescimento digital global.",
+  "ABOUT_DESCRIPTION": "Entregamos soluções digitais inovadoras que impulsionam o crescimento e a transformação em diversos setores, combinando expertise global com compromisso em resultados mensuráveis.",
+  "STATS_PROJECTS": "Projetos entregues com sucesso",
+  "STATS_YEARS": "Com mais de 15 anos de experiência",
+  "WHO_TITLE": "Somos uma <span>equipe global</span> impulsionando inovação em todos os lugares.",
+  "WHO_DESCRIPTION": "Nossa missão é colaborar com startups e empresas para co-criar soluções digitais, aproveitando o design thinking e tecnologias modernas para oferecer experiências impactantes.",
+  "STATS_TEAM": "Profissionais talentosos",
+  "STATS_INDUSTRIES": "Indústrias atendidas no mundo todo",
+  "our_global_family_title": "Notre Famille Mondiale",
+  "our_global_family_subtitle": "Notre présence internationale nous permet de collaborer entre les cultures, de résoudre des défis complexes et de fournir des solutions numériques évolutives qui favorisent la réussite à l’échelle mondiale.",
+  "CLEARSTEPS_TITLE": "Etapas claras que tornam o crescimento mais fácil para você",
+  "CLEARSTEPS_DESCRIPTION": "Aproveitamos IA avançada em todas as etapas do desenvolvimento — acelerando a entrega em 10x enquanto garantimos confiabilidade de alto nível.\n\nNossa equipe combina experiência humana profunda com automação alimentada por IA para otimizar processos, melhorar a qualidade e construir softwares prontos para o futuro.",
+  "CLEARSTEPS_BUTTON": "Começar"
 
 
 }

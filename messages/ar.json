@@ -108,5 +108,20 @@
       "LEARNING": "المحاضرات التفاعلية، تتبع تقدم الطلاب، والتقييمات المعتمدة على الألعاب زادت التفاعل بنسبة 60٪."
     },
     "VIEW": "عرض دراسة الحالة"
-  }
+  },
+  "ABOUT": "معلومات عنا",
+  "WHO": "من نحن",
+  "ABOUT_TITLE": "تأسسنا في <span>2012</span> لقيادة النمو الرقمي عالميًا.",
+  "ABOUT_DESCRIPTION": "نحن نقدم حلولًا رقمية مبتكرة تدفع النمو والتحول عبر الصناعات، من خلال الجمع بين الخبرة العالمية والالتزام بالنتائج الملموسة.",
+  "STATS_PROJECTS": "مشاريع تم تسليمها بنجاح",
+  "STATS_YEARS": "أكثر من 15 عامًا من الخبرة",
+  "WHO_TITLE": "نحن <span>فريق عالمي</span> يقود الابتكار في كل مكان.",
+  "WHO_DESCRIPTION": "مهمتنا هي التعاون مع الشركات الناشئة والمؤسسات لإنشاء حلول رقمية، باستخدام التفكير التصميمي والتقنيات الحديثة لتقديم تجارب مؤثرة.",
+  "STATS_TEAM": "محترفون موهوبون",
+  "STATS_INDUSTRIES": "صناعات تم خدمتها حول العالم",
+  "our_global_family_title": "Nuestra Familia Global",
+  "our_global_family_subtitle": "Nuestra presencia internacional nos permite colaborar entre culturas, resolver desafíos complejos y ofrecer soluciones digitales escalables que impulsan el éxito en todo el mundo.",
+  "CLEARSTEPS_TITLE": "خطوات واضحة تجعل النمو أسهل بالنسبة لك",
+  "CLEARSTEPS_DESCRIPTION": "نستخدم الذكاء الاصطناعي المتقدم في كل مرحلة من مراحل التطوير — مما يسرع التسليم 10 أضعاف مع ضمان أعلى مستوى من الموثوقية.\n\nيجمع فريقنا بين الخبرة البشرية العميقة والأتمتة المدعومة بالذكاء الاصطناعي لتبسيط العمليات، وتحسين الجودة، وبناء برامج جاهزة للمستقبل.",
+  "CLEARSTEPS_BUTTON": "ابدأ الآن"
 }

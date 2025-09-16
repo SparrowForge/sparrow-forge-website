@@ -5,43 +5,44 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import OptimizedDevelopmentCard from '../../card/OptimizedDevelopmentCard';
+import { LOCALE_KEYS } from '@/constants/localizationKeys';
+import { useTranslations } from 'next-intl';
 
-const cards = [
-  {
-    value: "70%",
-    subtitle: "/ Faster Development",
-    title: "Intelligent Coding",
-    description:
-      "AI-powered code synthesis and auto-completion reduce manual effort while maintaining enterprise-grade standards.",
-  },
-  {
-    value: "99.9%",
-    subtitle: "/ Defect-Free Releases",
-    title: "Bulletproof QA",
-    description:
-      "Self-learning test suites detect bugs early, with automated fixes for flawless deployments.",
-  },
-  {
-    value: "40%",
-    subtitle: "/ Higher Efficiency",
-    title: "Peak Performance",
-    description:
-      "ML algorithms optimize resource allocation, predict scaling needs, and eliminate bottlenecks in real-time.",
-  },
-  {
-    value: "90%",
-    subtitle: "/ Faster Deployments",
-    title: "Zero-Downtime DevOps",
-    description:
-      "AI-driven CI/CD pipelines automate rollbacks and canary releases for seamless updates.",
-  },
-];
+
 const OptimizedDevelopmentRightMb = () => {
     const [swiperInstance, setSwiperInstance] = useState(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
+    const t = useTranslations();
+
+     const cards = [
+    {
+      value: "70%",
+      title: t(LOCALE_KEYS.OPT_DEV_INTELLIGENT_CODING_TITLE),
+      subtitle: t(LOCALE_KEYS.OPT_DEV_INTELLIGENT_CODING_SUBTITLE),
+      description: t(LOCALE_KEYS.OPT_DEV_INTELLIGENT_CODING_DESC),
+    },
+    {
+      value: "99.9%",
+      title: t(LOCALE_KEYS.OPT_DEV_BULLETPROOF_QA_TITLE),
+      subtitle: t(LOCALE_KEYS.OPT_DEV_BULLETPROOF_QA_SUBTITLE),
+      description: t(LOCALE_KEYS.OPT_DEV_BULLETPROOF_QA_DESC),
+    },
+    {
+      value: "40%",
+      title: t(LOCALE_KEYS.OPT_DEV_PEAK_PERFORMANCE_TITLE),
+      subtitle: t(LOCALE_KEYS.OPT_DEV_PEAK_PERFORMANCE_SUBTITLE),
+      description: t(LOCALE_KEYS.OPT_DEV_PEAK_PERFORMANCE_DESC),
+    },
+    {
+      value: "90%",
+      title: t(LOCALE_KEYS.OPT_DEV_ZERO_DOWNTIME_TITLE),
+      subtitle: t(LOCALE_KEYS.OPT_DEV_ZERO_DOWNTIME_SUBTITLE),
+      description: t(LOCALE_KEYS.OPT_DEV_ZERO_DOWNTIME_DESC),
+    },
+  ];
     return (
-        <div className="w-full py-10 relative ">
+        <div className="w-full relative ">
             <Swiper
                 spaceBetween={20}
                 slidesPerView={1}
@@ -83,7 +84,7 @@ const OptimizedDevelopmentRightMb = () => {
                         }`}
                 >
                     <FaAngleLeft
-                        className={`text-2xl ${isBeginning ? "text-lightblue" : "text-white"
+                        className={`text-xl ${isBeginning ? "text-lightblue" : "text-white"
                             }`}
                     />
                 </button>
@@ -97,7 +98,7 @@ const OptimizedDevelopmentRightMb = () => {
                         }`}
                 >
                     <FaAngleRight
-                        className={`text-2xl ${isEnd ? "text-lightblue" : "text-white"
+                        className={`text-xl ${isEnd ? "text-lightblue" : "text-white"
                             }`}
                     />
                 </button>

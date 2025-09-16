@@ -59,7 +59,7 @@ export default function CaseStudiesSlider() {
     >
       {caseStudies.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="grid md:grid-cols-2 items-center gap-4">
+          <div className="grid md:grid-cols-2 items-center gap-4 px-2 md:px-0">
             <img src={item.image} alt={item.title} className="rounded-lg" />
             <div>
               <div className="inline-flex items-center gap-2 py-1 px-2 rounded-full bg-gray text-[14px] w-fit mb-6">

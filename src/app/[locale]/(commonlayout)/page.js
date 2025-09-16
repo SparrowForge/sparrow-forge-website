@@ -1,13 +1,12 @@
-import { LOCALE_KEYS } from '@/constants/localizationKeys';
-import { useLocalization } from '@/hooks/useLocalization';
-import LanguageButton from './shared/LanguageButton';
+import Banner from "./HomePage/Banner/Banner";
+
 
 export default function HomePage() {
-  const { t } = useLocalization();
 
   return (
-    <div className='my-40'>
+    <div className="flex flex-col justify-center items-center w-full  min-h-screen font-manrope xl:mb-10 md:mx-10 ">
       {/* <LanguageButton/> */}
+      <Banner/>
     </div>
   );
 }

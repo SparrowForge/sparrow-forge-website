@@ -1,5 +1,7 @@
 import React from "react";
 import ClearStepsLeft from "../../components/ClearSteps/ClearStepsLeft";
+import ClearStepsRight from "../../components/ClearSteps/ClearStepsRight";
+import ClearStepsRrightMB from "../../components/ClearSteps/ClearStepsRrightMB";
 
 
 const ClearSteps = () => {

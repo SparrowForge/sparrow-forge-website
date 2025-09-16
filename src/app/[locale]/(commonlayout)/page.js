@@ -21,8 +21,8 @@ export default function HomePage() {
       <OptimizedDevelopment />
       <CaseStudies />
       <Estimated />
-      <OurGlobalFamily/>
-<ClearSteps/>
+      <OurGlobalFamily />
+      <ClearSteps />
 
 
       <ScrollLanguage />

@@ -1,68 +1,63 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import ClearStepsCard from "../card/ClearStepsCard";
+import { useLocalization } from "@/hooks/useLocalization";
+import { LOCALE_KEYS } from "@/constants/localizationKeys";
 
 // Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper/modules";
 import "swiper/css";
-
-const cards = [
-  {
-    title: "Zero-risk assessment, tailored roadmap",
-    step: "Step 01",
-    icon: "/newDesign/ClearSteps/1.svg",
-    des1: "Free 60-min strategy session to analyze your tech stack",
-    des2: "AI-driven scoping tool estimates time/cost savings",
-    des3: "Receive a GDPR/ISO 2701-compliant project blueprint",
-  },
-  {
-    title: "Right talent + AI tools from day one",
-    step: "Step 02",
-    icon: "/newDesign/ClearSteps/2.svg",
-    des1: "Match with vetted engineers (800+ experts)",
-    des2: "AI-augmented sprint planning for 30% faster kickoff",
-    des3: "Dedicated PM + automated progress dashboards",
-  },
-  {
-    title: "Smarter Coding, Testing, and Deployment",
-    step: "Step 03",
-    icon: "/newDesign/ClearSteps/3.svg",
-    des1: "AI pair-programming assistants (70% faster dev)",
-    des2: "Self-healing test suites (99.9% reliability)",
-    des3: "Real-time compliance checks (ISO 27001 baked in)",
-  },
-  {
-    title: "Automating your growth every step of the way",
-    step: "Step 04",
-    icon: "/newDesign/ClearSteps/4.svg",
-    des1: "AI-optimized cloud deployment",
-    des2: "Continuous performance monitoring & predictive scaling",
-    des3: "90-day post-launch support with AI-driven analytics",
-  },
-];
+import ClearStepsCard from "../../card/ClearStepsCard";
 
 const ClearStepsRight = () => {
+  const t = useLocalization();
   const swiperRef = useRef();
+
+  const cards = [
+    {
+      title: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD1.TITLE),
+      step: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD1.STEP),
+      icon: "/ClearSteps/1.svg",
+      des1: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD1.DES1),
+      des2: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD1.DES2),
+      des3: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD1.DES3),
+    },
+    {
+      title: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD2.TITLE),
+      step: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD2.STEP),
+      icon: "/ClearSteps/2.svg",
+      des1: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD2.DES1),
+      des2: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD2.DES2),
+      des3: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD2.DES3),
+    },
+    {
+      title: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD3.TITLE),
+      step: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD3.STEP),
+      icon: "/ClearSteps/3.svg",
+      des1: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD3.DES1),
+      des2: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD3.DES2),
+      des3: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD3.DES3),
+    },
+    {
+      title: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD4.TITLE),
+      step: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD4.STEP),
+      icon: "/ClearSteps/4.svg",
+      des1: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD4.DES1),
+      des2: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD4.DES2),
+      des3: t(LOCALE_KEYS.CLEARSTEPS_CARD.CARD4.DES3),
+    },
+  ];
 
   useEffect(() => {
     const handleWheel = (e) => {
       if (!swiperRef.current) return;
-
-      if (e.deltaY > 0) {
-        swiperRef.current.slideNext();
-      } else {
-        swiperRef.current.slidePrev();
-      }
+      if (e.deltaY > 0) swiperRef.current.slideNext();
+      else swiperRef.current.slidePrev();
     };
 
-    // Attach to whole window
     window.addEventListener("wheel", handleWheel, { passive: true });
-
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-    };
+    return () => window.removeEventListener("wheel", handleWheel);
   }, []);
 
   return (
@@ -81,10 +76,7 @@ const ClearStepsRight = () => {
         className="w-full h-full"
       >
         {cards.map((card, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex justify-center items-center"
-          >
+          <SwiperSlide key={index} className="flex justify-center items-center">
             <ClearStepsCard
               step={card.step}
               title={card.title}

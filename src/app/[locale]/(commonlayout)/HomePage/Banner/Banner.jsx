@@ -11,9 +11,9 @@ const Banner = () => {
                 backgroundPosition: "center",
             }} >
 
-            <div className='lg:w-[1194px] md:mx-auto '>
+            <div className='md:w-[1194px] md:mx-auto '>
                 <Navbar/>
-                <div className='flex flex-col md:flex-row justify-between items-center'>
+                <div className='flex flex-col md:flex-row justify-between items-center gap-2'>
                     <HomeBannerAbove/>
                     <BannerCard/>
                 </div>

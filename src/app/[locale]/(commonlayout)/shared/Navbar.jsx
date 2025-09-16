@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
       <>
-      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 md:p-6 w-full md:w-[1194px] md:mx-auto">
+      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 md:px-0 w-full md:w-[1194px] md:mx-auto">
         <SparrowLogo />
 
         {/* Desktop Menu */}

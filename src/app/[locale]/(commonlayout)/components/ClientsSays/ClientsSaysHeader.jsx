@@ -2,11 +2,11 @@
 import React from 'react';
 import Title from '../../shared/Title';
 import Button from '../../shared/Button';
-import { useLocalization } from '@/hooks/useLocalization';
 import { LOCALE_KEYS } from '@/constants/localizationKeys';
+import { useTranslations } from 'next-intl';
 
 const ClientsSaysHeader = () => {
-  const t = useLocalization();
+  const t = useTranslations();
 
   return (
     <div className='flex flex-col md:flex-row justify-between items-center md:gap-4'>

@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Slide Menu */}
       <div
-        className={`fixed top-[86px] right-2 rounded-2xl w-1/2 max-w-xs bg-deepblue shadow-lg p-6 z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`absolute top-[86px] right-0 rounded-2xl w-1/2 max-w-xs bg-deepblue shadow-lg p-6 z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'
           } md:hidden`}
       >
         <ul className="flex flex-col gap-4 text-[16px] text-white">

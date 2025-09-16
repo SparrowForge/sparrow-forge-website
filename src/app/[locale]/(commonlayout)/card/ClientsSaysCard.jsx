@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 const ClientsSaysCard = ({ item }) => {
   const t = useTranslations();
+  const plural = item.rating > 1 ? "s" : "";
   return (
     <div className="bg-white rounded-2xl shadow p-6 h-[260px]">
       {/* Profile */}
@@ -22,12 +23,12 @@ const ClientsSaysCard = ({ item }) => {
       </div>
 
       {/* Number */}
-<div className="flex items-center ">
-  <p className="text-[18px] text-gray-300 font-semibold border-t p-2 rounded-full">{item.number}</p>
-  <div className="flex-1 h-0.5 bg-gray rounded-full"></div>
-</div>
+      <div className="flex items-center ">
+        <p className="text-[18px] text-gray-300 font-semibold border-t p-2 rounded-full">{item.number}</p>
+        <div className="flex-1 h-0.5 bg-gray rounded-full"></div>
+      </div>
 
-     
+
 
       {/* Feedback */}
       <p className="text-gray-600 text-sm mb-4">{item.feedback}</p>
@@ -37,15 +38,14 @@ const ClientsSaysCard = ({ item }) => {
         {[...Array(5)].map((_, i) => (
           <Star
             key={i}
-            className={`w-4 h-4 ${
-              i < item.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
-            }`}
+            className={`w-4 h-4 ${i < item.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
+              }`}
           />
         ))}
-        <span className="text-sm text-gray-500"> {t(LOCALE_KEYS.CLIENTS.RATING_STAR, {
-            count: item.rating,
-            plural: plural
-          })}</span>
+        <span className="text-sm text-gray-500"> {t(LOCALE_KEYS.RATING_STAR, {
+          count: item.rating,
+          plural: plural
+        })}</span>
       </div>
     </div>
   );

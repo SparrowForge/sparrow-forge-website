@@ -12,7 +12,7 @@ const data = [
     { id: 3, name: "Holy Seed Agro", image: "/Client_List/holyseedagro.png", href: "https://www.holyseedagroltd.com/" },
     { id: 4, name: "Cryto Wallet", image: "", href: "https://vtroncard.com" },
     { id: 5, name: "CLAR", image: "/Client_List/CLAR.png", href: "https://clar.pt" },
-    { id: 6, name: "Cryto Bank", image: "/Client_List/cryptobanx.png", href: "https://www.holyseedagroltd.com/" },
+    { id: 6, name: "Cryto Bank", image: "/Client_List/cryptobanx.png", href: "https://www.cryptobanx.com/" },
     { id: 7, name: "Blue Atlanticl", image: "/Client_List/blueatlanticl.png", href: "https://www.blueatlanticltd.com" },
     { id: 8, name: "Solo Clash", image: "/Client_List/soloclash.png", href: "http://soloclash.com" },
 ];

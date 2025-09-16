@@ -8,6 +8,7 @@ import SparrowLogo from './SparrowLogo';
 import Link from 'next/link';
 import { useLocalization } from '@/hooks/useLocalization';
 import { LOCALE_KEYS } from '@/constants/localizationKeys';
+import LanguageButton from './LanguageButton';
 
 // Define keys for menu and buttons
 // Add these keys in your LOCALE_KEYS object
@@ -38,12 +39,12 @@ const Navbar = () => {
   ];
 
   return (
-    <>
-      <div className="relative font-manrope mx-auto flex items-center justify-between my-4 h-[64px] rounded-full px-6">
+      <>
+      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 md:px-0 w-full md:w-[1194px] md:mx-auto">
         <SparrowLogo />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-[16px] text-white/50 line-clamp-1">
+        <ul className="hidden md:flex justify-center items-center gap-4 text-[16px] text-white/50 line-clamp-1">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a href={item.href} className="hover:text-lightblue transition">
@@ -51,17 +52,22 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-        </ul>
 
-        <Link href="contactus">
-          <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-[16px] rounded-full hover:bg-lightblue-50 transition">
-            {t(LOCALE_KEYS.CONTACT_US)}{" "}
-            <Image src="/shared/Vector.svg" alt="Phone" width={12} height={12} />
-          </button>
-        </Link>
+        </ul>
+        <div className='hidden md:flex gap-2'>
+          <LanguageButton />
+          <Link href="contactus">
+            <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-[16px] rounded-full hover:bg-lightblue-50 transition">
+              {t(LOCALE_KEYS.CONTACT_US)}{" "}
+              <Image src="/shared/Vector.svg" alt="Phone" width={12} height={12} />
+            </button>
+          </Link>
+        </div>
+
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="flex justify-center items-center md:hidden">
+          <LanguageButton/>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (
               <RxCross2 size={24} className="text-white" />
@@ -74,9 +80,8 @@ const Navbar = () => {
 
       {/* Mobile Slide Menu */}
       <div
-        className={`fixed top-[86px] right-2 rounded-2xl w-1/2 max-w-xs bg-deepblue shadow-lg p-6 z-50 transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden`}
+        className={`absolute top-[86px] right-0 rounded-2xl w-1/2 max-w-xs bg-deepblue shadow-lg p-6 z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'
+          } md:hidden`}
       >
         <ul className="flex flex-col gap-4 text-[16px] text-white">
           {menuItems.map((item) => (
@@ -90,11 +95,14 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          {/* <li>
+            <LanguageButton />
+          </li> */}
           <li>
             <Link href="contactus">
-              <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-lightblue text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
+              <button className="w-full flex items-center justify-center gap-1 px-2 py-2 border border-white text-white hover:text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
                 {t(LOCALE_KEYS.CONTACT_US)}{" "}
-                <Image src="/Phone.svg" alt="Phone" width={18} height={18} />
+                <Image src="/shared/Vector.svg" alt="Phone" width={18} height={18} />
               </button>
             </Link>
           </li>

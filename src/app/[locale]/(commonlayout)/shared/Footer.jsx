@@ -37,115 +37,123 @@ const Footer = () => {
   ];
 
   const socialMedia = [
-    { icon: fbIcon, key: "Facebook", href: "https://www.facebook.com/sprwforge" },
-    { icon: inIcon, key: "LinkedIn", href: "https://www.linkedin.com/company/sparrow-forge-ltd/posts/?feedView=all" },
-    { icon: wpIcon, key: "WhatsApp", href: "https://wa.me/8801339314661" },
+    { icon: fbIcon, label: "Facebook", href: "https://www.facebook.com/sprwforge" },
+    { icon: inIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/sparrow-forge-ltd/posts/?feedView=all" },
+    { icon: wpIcon, label: "WhatsApp", href: "https://wa.me/8801339314661" },
   ];
 
   const contact = [
-    {
-      icon: gmailIcon,
-      text: "info@sprwforge.com",
-      href: "mailto:info@sprwforge.com",
-    },
-    {
-      icon: phoneIcon,
-      text: "+88 013393-14661",
-      href: "#",
-    },
+    { icon: gmailIcon, text: "info@sprwforge.com", href: "mailto:info@sprwforge.com" },
+    { icon: phoneIcon, text: "+88 013393-14661", href: "tel:+8801339314661" },
   ];
 
+  // Small reusable component for columns
+  const FooterColumn = ({ title, children }) => (
+    <div>
+      <h3 className="font-semibold text-md mb-2">{title}</h3>
+      <ul className="space-y-2 text-sm text-white/50">{children}</ul>
+    </div>
+  );
+
   return (
-    <div className="relative bg-deepblue text-white w-full pt-52 pb-10 mt-20 md:mt-60">
+    <footer className="bg-deepblue text-white w-full relative pt-52 pb-10 mt-20 md:mt-60">
       {/* Floating Above Card */}
-      <div className="flex justify-center items-center absolute z-50 -top-20 md:-top-52 left-0 right-0 mx-10">
+      <div className="flex justify-center absolute z-50 -top-20 md:-top-52 w-full px-4 md:px-10">
         <FooterAboveCard />
       </div>
 
-      {/* Footer Content */}
-      <div className="mx-10 flex flex-col md:flex-row justify-between items-start text-center md:text-start">
-        {/* Company Info */}
-        <div className="mb-10 md:w-1/4 space-y-4">
-          <div className="flex justify-center md:justify-start">
+      <div className="w-full md:w-[1194px] mx-auto">
+        {/* Footer Main */}
+        <div className="mx-10 md:mx-0 flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+          {/* Logo */}
+          <div className="mb-10 md:w-1/4">
             <SparrowLogo />
           </div>
-          <p className="text-sm text-[#FFFFFF]/48">
-            {t(LOCALE_KEYS.COPYRIGHT)}
-          </p>
+
+          {/* Links */}
+          <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 text-center">
+            {/* Quick Links */}
+            <FooterColumn title={t(LOCALE_KEYS.QUICK_LINKS)}>
+              {quickLinks.map(({ key, href }) => (
+                <li key={key}>
+                  <Link href={href} className="hover:text-lightblue transition">
+                    {t(key)}
+                  </Link>
+                </li>
+              ))}
+            </FooterColumn>
+
+            {/* Services */}
+            <FooterColumn title={t(LOCALE_KEYS.SERVICES)}>
+              {services.map(({ key, href }) => (
+                <li key={key}>
+                  <Link href={href} className="hover:text-lightblue transition">
+                    {t(key)}
+                  </Link>
+                </li>
+              ))}
+            </FooterColumn>
+
+            {/* Social */}
+            <FooterColumn title={t(LOCALE_KEYS.FOLLOW_US)}>
+              {socialMedia.map(({ icon, label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-lightblue text-center"
+                  >
+                    <Image src={icon} alt={label} width={18} height={18} />
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </FooterColumn>
+
+            <FooterColumn title={t(LOCALE_KEYS.GET_IN_TOUCH)}>
+              {contact.map(({ icon, text, href }) => (
+                <li key={text}>
+                  <a href={href} className="flex  items-center gap-2 hover:text-lightblue transition text-center">
+                    <Image src={icon} alt={text} width={16} height={16} />
+                    <span className="text-[16px]">{text}</span>
+                  </a>
+                </li>
+              ))}
+            </FooterColumn>
+          </div>
+
+          {/* Contact */}
+          {/* <div className="mt-10 md:mt-0 md:w-1/4">
+            <FooterColumn title={t(LOCALE_KEYS.GET_IN_TOUCH)}>
+              {contact.map(({ icon, text, href }) => (
+                <li key={text}>
+                  <a href={href} className="flex items-center gap-2 hover:text-lightblue transition">
+                    <Image src={icon} alt={text} width={16} height={16} />
+                    <span className="text-[16px]">{text}</span>
+                  </a>
+                </li>
+              ))}
+            </FooterColumn>
+          </div> */}
         </div>
 
-        <div className="w-full md:w-2/4 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4 text-center md:text-start">
-          {/* Quick Links */}
-          <div className="md:ml-16">
-            <h3 className="font-semibold text-md mb-2">{t(LOCALE_KEYS.QUICK_LINKS)}</h3>
-            <ul className="space-y-1 text-sm text-[#FFFFFF]/48">
-              {quickLinks.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href} className="hover:text-lightblue cursor-pointer">
-                    {t(item.key)}
-                  </a>
-                </li>
-              ))}
-            </ul>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 mt-12 pt-6 text-sm text-white/50">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+            <p>{t(LOCALE_KEYS.COPYRIGHT)}</p>
+            <div className="flex gap-4 mt-2 md:mt-0">
+              <Link href="#" className="hover:text-lightblue">
+                {t(LOCALE_KEYS.PRIVACY_POLICY)}
+              </Link>
+              <Link href="#" className="hover:text-lightblue">
+                {t(LOCALE_KEYS.TERMS_OF_SERVICE)}
+              </Link>
+            </div>
           </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold text-md mb-2">{t(LOCALE_KEYS.SERVICES)}</h3>
-            <ul className="space-y-1 text-sm text-[#FFFFFF]/48">
-              {services.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href} className="hover:text-lightblue cursor-pointer">
-                    {t(item.key)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Follow Us */}
-          <div className="mx-auto">
-            <h3 className="font-semibold text-md mb-2">{t(LOCALE_KEYS.FOLLOW_US)}</h3>
-            <ul className="space-y-2 text-sm text-[#FFFFFF]/48">
-              {socialMedia.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href} className="flex items-center gap-2 hover:text-lightblue cursor-pointer">
-                    <Image src={item.icon} alt={item.key} width={18} height={18} />
-                    {item.key}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Contact */}
-        <div className="mt-10 md:mt-0 md:w-1/4">
-          <h3 className="font-semibold text-md mb-2">{t(LOCALE_KEYS.GET_IN_TOUCH)}</h3>
-          <ul className="space-y-2 text-sm text-[#FFFFFF]/48">
-            {contact.map((item, index) => (
-              <li key={index}>
-                <a href={item.href} className="flex items-center gap-2 hover:text-lightblue cursor-pointer">
-                  <Image src={item.icon} alt={item.text} width={16} height={16} />
-                  <h1 className="text-[16px]">{item.text}</h1>
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-[#FFFFFF]/14 mt-12 pt-6 px-6 mx-auto text-sm items-center text-[#FFFFFF]/48">
-        <div className="flex flex-col md:flex-row justify-between md:mx-10">
-          <p>{t(LOCALE_KEYS.COPYRIGHT)}</p>
-          <div className="flex gap-4 mt-2 md:mt-0">
-            <p className="hover:text-lightblue">{t(LOCALE_KEYS.PRIVACY_POLICY)}</p>
-            <p className="hover:text-lightblue">{t(LOCALE_KEYS.TERMS_OF_SERVICE)}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 

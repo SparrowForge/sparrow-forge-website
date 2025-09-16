@@ -1,7 +1,8 @@
 "use client";
 import Marquee from "react-fast-marquee";
-import { LOCALE_KEYS } from "@/constants/localizationKeys";
 import { useTranslations } from "next-intl";
+import { LOCALE_KEYS } from "@/constants/localizationKeys";
+import Image from "next/image";
 
 const data = [
   { id: 1, image: "/CompleteSupportTechStack/1.svg" },

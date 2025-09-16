@@ -54,7 +54,7 @@ const HomeBannerAbove = () => {
             {/* CTA Button */}
             <Button
                 image="/bannerImg/arrowRightUpWhite.svg"
-                title={t(LOCALE_KEYS.GET_STARTED)}
+                title={t(LOCALE_KEYS.LETS_GET_STARTED)}
                 className="bg-lightblue text-white text-sm md:text-[20px] px-4 md:px-6 py-2 md:py-3 rounded-full "
             />
         </div>

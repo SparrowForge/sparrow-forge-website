@@ -1,4 +1,5 @@
 import Banner from "./HomePage/Banner/Banner";
+import CaseStudies from "./HomePage/CaseStudies/CaseStudies";
 import OptimizedDevelopment from "./HomePage/OptimizedDevelopment/OptimizedDevelopment";
 import TransformIdeas from "./HomePage/TransformIdeas/TransformIdeas";
 import TrustedBy from "./HomePage/TrustedBy/TrustedBy";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <TransformIdeas/>
       <TrustedBy/>
       <OptimizedDevelopment/>
+      <CaseStudies/>
     </div>
   );
 }

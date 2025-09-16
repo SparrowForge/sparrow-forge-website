@@ -17,7 +17,7 @@ const OptimizedDevelopmentLeft = () => {
       <div>
         <Button
           image="/bannerImg/arrowRightUpWhite.svg"
-          title={t(LOCALE_KEYS.OPT_DEV_BUTTON)}
+          title={t(LOCALE_KEYS.GET_STARTED)}
           className="bg-lightblue text-white text-sm md:text-[14px] px-4 py-2 rounded-full"
         />
       </div>

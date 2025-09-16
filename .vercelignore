@@ -1,0 +1,19 @@
+# Node modules
+node_modules
+
+# Build outputs
+.next
+.out
+dist
+
+# Cache
+.next/cache
+*.log
+*.tmp
+.DS_Store
+
+# Git
+.git
+
+# Legal / empty files
+*.LEGAL.txt

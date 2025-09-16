@@ -20,7 +20,7 @@ const FooterAboveCard = () => {
       <div className="border border-white p-1 rounded-full animation-zoom-out-hover text-[10px] md:text-[18px]">
         <Button
           image="/shared/buttonarrow.svg"
-          title={t(LOCALE_KEYS.GET_STARTED)}
+          title={t(LOCALE_KEYS.LETS_GET_STARTED)}
           className="bg-white text-lightblue px-6 py-3 rounded-full "
         />
       </div>

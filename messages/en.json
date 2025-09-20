@@ -166,5 +166,52 @@
     "CLIENT_6_NAME": "Sophia Brown",
     "CLIENT_6_ROLE": "CEO at CloudWorks",
     "CLIENT_6_FEEDBACK": "They understood our vision and delivered beyond expectations. The whole process was smooth, and the outcome was fantastic.",
-    "CLIENTS_RATING_STAR": "{count} star{plural}"
+    "CLIENTS_RATING_STAR": "{count} star{plural}",
+    "button_title": "Get In Touch 📩",
+    "heading": "Want to Extend Your Team?",
+    "description": "Have questions or ready to take the next step? Whether you’re looking to buy, rent, or invest, our team is here to guide you every step of the way. Let’s turn your property goals into reality.",
+    "role": "Chief Commercial Officer",
+    "email": "Email",
+    "phone": "Phone",
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "We understand that starting a new project can bring up a lot of questions — and we’re here to help.",
+        "items": {
+            "q1": {
+                "question": "What services do you offer?",
+                "answer": "We offer a wide range of services including web development, mobile app development, UI/UX design, digital marketing, and cloud solutions."
+            },
+            "q2": {
+                "question": "How do I get started with a project?",
+                "answer": "Getting started with us is simple and seamless. You can reach out through our contact page, email us directly, or even schedule a free consultation. Once we hear from you, we’ll arrange a discovery call where we’ll take time to understand your goals, challenges, target audience, and technical needs."
+            },
+            "q3": {
+                "question": "How long does a typical project take?",
+                "answer": "The timeline depends on the scope and complexity of the project. Typically, small projects can take 4-6 weeks, while larger ones may take several months."
+            },
+            "q4": {
+                "question": "What industries do you work with?",
+                "answer": "We work with a diverse range of industries including healthcare, finance, e-commerce, education, and technology."
+            },
+            "q5": {
+                "question": "Do you provide post-launch support?",
+                "answer": "Yes, we offer post-launch support and maintenance to ensure your product remains updated, secure, and fully functional."
+            }
+        }
+    },
+    "button_title_contact": "Achievements! 🏆",
+    "heading_contact": "We’d love to help! Let us know how",
+    "description_contact": "Fill out the form, and we will get in touch with you as soon as possible.",
+    "full_name": "Full Name",
+    "full_name_placeholder": "Write Your Fullname",
+    "email_contact": "Email Address",
+    "email_placeholder": "Enter your email so we can connect with you",
+    "subject": "Subject",
+    "subject_placeholder": "Regarding Products",
+    "message": "Message",
+    "message_placeholder": "Write a message",
+    "privacy_text": "I agree that Sparrow processes information about me in accordance with the privacy statement.",
+    "confirm_text": "I Confirm*",
+    "submit": "Submit",
+    "success": "Thanks for sending message, keep connected!"
 }

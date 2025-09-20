@@ -166,5 +166,52 @@
   "CLIENT_6_NAME": "Sophia Brown",
   "CLIENT_6_ROLE": "CEO na CloudWorks",
   "CLIENT_6_FEEDBACK": "Eles entenderam nossa visão e entregaram além das expectativas. Todo o processo foi tranquilo e o resultado foi fantástico.",
-  "CLIENTS_RATING_STAR": "{count} estrela{plural}"
+  "CLIENTS_RATING_STAR": "{count} estrela{plural}",
+  "button_title": "Entre em Contato 📩",
+  "heading": "Quer expandir sua equipe?",
+  "description": "Tem dúvidas ou pronto para o próximo passo? Seja para comprar, alugar ou investir, nossa equipe está aqui para guiá-lo em cada etapa. Vamos transformar seus objetivos imobiliários em realidade.",
+  "role": "Diretor Comercial",
+  "email": "Email",
+  "phone": "Telefone",
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Entendemos que iniciar um novo projeto pode gerar muitas dúvidas — e estamos aqui para ajudar.",
+    "items": {
+      "q1": {
+        "question": "Quais serviços vocês oferecem?",
+        "answer": "Oferecemos uma ampla gama de serviços, incluindo desenvolvimento web, desenvolvimento de aplicativos móveis, design UI/UX, marketing digital e soluções em nuvem."
+      },
+      "q2": {
+        "question": "Como posso iniciar um projeto?",
+        "answer": "Começar conosco é simples e prático. Você pode entrar em contato pela página de contato, nos enviar um e-mail diretamente ou até agendar uma consulta gratuita. Depois de ouvir você, organizaremos uma reunião para entender seus objetivos, desafios, público-alvo e necessidades técnicas."
+      },
+      "q3": {
+        "question": "Quanto tempo leva um projeto típico?",
+        "answer": "O prazo depende do escopo e da complexidade do projeto. Normalmente, projetos pequenos levam de 4 a 6 semanas, enquanto os maiores podem levar vários meses."
+      },
+      "q4": {
+        "question": "Com quais setores vocês trabalham?",
+        "answer": "Trabalhamos com diversos setores, incluindo saúde, finanças, e-commerce, educação e tecnologia."
+      },
+      "q5": {
+        "question": "Vocês oferecem suporte pós-lançamento?",
+        "answer": "Sim, oferecemos suporte e manutenção após o lançamento para garantir que seu produto permaneça atualizado, seguro e totalmente funcional."
+      }
+    }
+  },
+  "button_title_contact": "Conquistas! 🏆",
+  "heading_contact": "Adoraríamos ajudar! Conte-nos como",
+  "description_contact": "Preencha o formulário e entraremos em contato o mais rápido possível.",
+  "full_name": "Nome Completo",
+  "full_name_placeholder": "Escreva seu nome completo",
+  "email_contact": "Endereço de Email",
+  "email_placeholder": "Digite seu email para que possamos entrar em contato",
+  "subject": "Assunto",
+  "subject_placeholder": "Sobre Produtos",
+  "message": "Mensagem",
+  "message_placeholder": "Escreva uma mensagem",
+  "privacy_text": "Concordo que a Sparrow processe informações sobre mim de acordo com a declaração de privacidade.",
+  "confirm_text": "Confirmo*",
+  "submit": "Enviar",
+  "success": "Obrigado por enviar sua mensagem, mantenha-se conectado!"
 }

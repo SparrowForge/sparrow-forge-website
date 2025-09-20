@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 text-center">
+          <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 text-center md:text-start">
             {/* Quick Links */}
             <FooterColumn title={t(LOCALE_KEYS.QUICK_LINKS)}>
               {quickLinks.map(({ key, href }) => (

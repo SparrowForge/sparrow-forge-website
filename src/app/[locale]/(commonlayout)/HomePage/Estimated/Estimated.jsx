@@ -17,7 +17,7 @@ const Estimated = () => {
         { value: "250+", label: t(LOCALE_KEYS.STATS_PROJECTS) },
         { value: "15+", label: t(LOCALE_KEYS.STATS_YEARS) }
       ],
-      image: "/team/team.png"
+      image: "/team/team.jpg"
     },
     who: {
       title: t.raw(LOCALE_KEYS.WHO_TITLE),
@@ -26,7 +26,7 @@ const Estimated = () => {
         { value: "50+", label: t(LOCALE_KEYS.STATS_TEAM) },
         { value: "10+", label: t(LOCALE_KEYS.STATS_INDUSTRIES) }
       ],
-      image: "/team/3.png"
+      image: "/team/3.jpg"
     }
   };
 

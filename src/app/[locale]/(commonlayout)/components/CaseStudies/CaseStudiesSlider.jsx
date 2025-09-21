@@ -5,6 +5,7 @@ import "swiper/css";
 import { useTranslations } from "next-intl";
 import Button from "../../shared/Button";
 import { LOCALE_KEYS } from "@/constants/localizationKeys";
+import Image from "next/image";
 
 export default function CaseStudiesSlider() {
   const t = useTranslations();
@@ -17,7 +18,7 @@ export default function CaseStudiesSlider() {
       title: t(LOCALE_KEYS.CASESTUDIES.TITLE.SOCIAL),
       description: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION.SOCIAL),
       description1: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION1.SOCIAL),
-      image: "/caseStudies/1.svg",
+      image: "/caseStudies/1.jpg",
     },
     {
       id: 2,
@@ -26,7 +27,7 @@ export default function CaseStudiesSlider() {
       title: t(LOCALE_KEYS.CASESTUDIES.TITLE.FASHION),
       description: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION.FASHION),
       description1: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION1.FASHION),
-      image: "/caseStudies/2.png",
+      image: "/caseStudies/2.jpg",
     },
     {
       id: 3,
@@ -35,7 +36,7 @@ export default function CaseStudiesSlider() {
       title: t(LOCALE_KEYS.CASESTUDIES.TITLE.HEALTH),
       description: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION.HEALTH),
       description1: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION1.HEALTH),
-      image: "/caseStudies/3.png",
+      image: "/caseStudies/3.jpg",
     },
     {
       id: 4,
@@ -44,7 +45,7 @@ export default function CaseStudiesSlider() {
       title: t(LOCALE_KEYS.CASESTUDIES.TITLE.LEARNING),
       description: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION.LEARNING),
       description1: t(LOCALE_KEYS.CASESTUDIES.DESCRIPTION1.LEARNING),
-      image: "/caseStudies/4.png",
+      image: "/caseStudies/4.jpg",
     }
   ];
 
@@ -59,8 +60,15 @@ export default function CaseStudiesSlider() {
     >
       {caseStudies.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="grid md:grid-cols-2 items-center gap-4 px-2 md:px-0">
-            <img src={item.image} alt={item.title} className="rounded-lg" />
+          <div className="flex flex-col md:flex-row justify-between  items-center gap-4 px-2 md:px-0">
+            <div className="relative md:w-[800px] md:h-[460px] ">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="rounded-2xl object-cover"
+              />
+            </div>
             <div>
               <div className="inline-flex items-center gap-2 py-1 px-2 rounded-full bg-gray text-[14px] w-fit mb-6">
                 <div className="bg-gray-300 py-1 px-2 rounded-full">{item.button1}</div>

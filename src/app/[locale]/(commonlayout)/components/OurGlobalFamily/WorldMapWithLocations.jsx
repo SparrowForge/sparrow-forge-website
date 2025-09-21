@@ -8,15 +8,15 @@ const locations = [
     top: '20%',
     left: '20%',
     title: 'New York',
-    image: '/innovation/1.svg',
-    description: 'Our New York office drives innovation across the Americas.'
+    image: '/map/1.jpg',
+    description: 'Our New York office drives map across the Americas.'
   },
   {
     id: 2,
     top: '10%',
     left: '36%',
     title: 'London',
-    image: '/innovation/1.svg',
+    image: '/map/1.jpg',
     description: 'Our London office leads European operations with excellence.'
   },
   {
@@ -24,7 +24,7 @@ const locations = [
     top: '25%',
     left: '69%',
     title: 'Tokyo',
-    image: '/innovation/1.svg',
+    image: '/map/1.jpg',
     description: 'Tokyo office focuses on cutting-edge technology and partnerships.'
   },
   {
@@ -32,7 +32,7 @@ const locations = [
     top: '42%',
     left: '68%',
     title: 'Dubai',
-    image: '/innovation/1.svg',
+    image: '/map/1.jpg',
     description: 'Our Dubai office is the central hub overseeing global operations.'
   },
   {
@@ -40,7 +40,7 @@ const locations = [
     top: '68%',
     left: '52%',
     title: 'Sydney',
-    image: '/innovation/1.svg',
+    image: '/map/1.jpg',
     description: 'Sydney team focuses on Asia-Pacific market expansion and growth.'
   },
   {
@@ -48,7 +48,7 @@ const locations = [
     top: '35%',
     left: '23%',
     title: 'Cape Town',
-    image: '/innovation/1.svg',
+    image: '/map/1.jpg',
     description: 'Cape Town team manages operations in Southern Africa region.'
   }
 ];
@@ -61,21 +61,21 @@ const WorldMapWithLocations = () => {
     <div className="relative w-full h-[200px] md:h-[600px] bg-white flex items-center justify-center overflow-hidden">
       {/* World Map Background */}
       <Image
-        src="/map/mapImage.svg"
+        src="/map/mapImage.jpg"
         alt="World Map"
         fill
         className="object-contain"
       />
 
       {/* Polygon shape */}
-      <svg className="absolute inset-0 w-full h-full" viewBox={`0 0 ${width} ${height}`}>
+      <jpg className="absolute inset-0 w-full h-full" viewBox={`0 0 ${width} ${height}`}>
         <polygon
           points="60,120 300,50 800,150 780,280 550,460 130,250"
           fill="rgba(33, 100, 248, 0.08)"
           stroke="#2164F8"
           strokeWidth="2"
         />
-      </svg>
+      </jpg>
 
       {/* Render markers dynamically */}
       {locations.map((loc) => (
@@ -83,7 +83,7 @@ const WorldMapWithLocations = () => {
           {/* Icon */}
           <div className="w-8 h-8 bg-lightblue rounded-full border-2 border-white flex justify-center items-center cursor-pointer">
             <Image
-              src="/map/company.svg"
+              src="/map/company.jpg"
               alt="World Map"
               width={10}
               height={10}

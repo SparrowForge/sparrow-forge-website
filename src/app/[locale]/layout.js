@@ -3,7 +3,13 @@ import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { Manrope } from "next/font/google";
 
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["200", "400", "600", "800"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Sparrow Forge",
@@ -18,7 +24,7 @@ export default async function RootLayout({ children, params }) {
     notFound();
   }
   return (
-    <html  suppressHydrationWarning >
+    <html  suppressHydrationWarning className={manrope.className}>
       <body suppressHydrationWarning
         className=""
         

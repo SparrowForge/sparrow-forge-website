@@ -1,8 +1,9 @@
 'use client'
 import React from "react";
-import { Star } from "lucide-react";
 import { LOCALE_KEYS } from "@/constants/localizationKeys";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 
 const ClientsSaysCard = ({ item }) => {
   const t = useTranslations();
@@ -11,11 +12,15 @@ const ClientsSaysCard = ({ item }) => {
     <div className="bg-white rounded-2xl shadow p-6 h-[260px]">
       {/* Profile */}
       <div className="flex items-center gap-4 mb-4">
-        <img
-          src={item.image}
-          alt={item.name}
-          className="w-12 h-12 rounded-full object-cover"
-        />
+        <div className="relative w-[50px] h-[50px]">
+          <Image
+            src={item.image}
+            alt={item.name}
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
+
         <div>
           <h3 className="font-semibold text-gray-800">{item.name}</h3>
           <p className="text-sm text-gray-500">{item.role}</p>
@@ -36,7 +41,7 @@ const ClientsSaysCard = ({ item }) => {
       {/* Rating */}
       <div className="flex items-center gap-2">
         {[...Array(5)].map((_, i) => (
-          <Star
+          <FaStar
             key={i}
             className={`w-4 h-4 ${i < item.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
               }`}

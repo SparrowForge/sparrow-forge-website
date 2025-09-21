@@ -8,7 +8,7 @@ import { LOCALE_KEYS } from "@/constants/localizationKeys";
 
 const data = [
     { id: 1, name: "BAC (British American College)", image: "/Client_List/bacbd-logo.png", href: "https://www.bacbd.org" },
-    { id: 2, name: "Event World BD", image: "/Client_List/eventworldbd.png", href: "https://eventworldbd.com" },
+    { id: 2, name: "Event World BD", image: "/Client_List/eventworldbd.jpg", href: "https://eventworldbd.com" },
     { id: 3, name: "Holy Seed Agro", image: "/Client_List/holyseedagro.png", href: "https://www.holyseedagroltd.com/" },
     { id: 4, name: "Cryto Wallet", image: "", href: "https://vtroncard.com" },
     { id: 5, name: "CLAR", image: "/Client_List/CLAR.png", href: "https://clar.pt" },

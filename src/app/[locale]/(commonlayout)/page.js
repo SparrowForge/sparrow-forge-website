@@ -5,7 +5,7 @@ import ClientsSays from "./HomePage/ClientsSays/ClientsSays";
 import CompleteSupportTechStack from "./HomePage/CompleteSupportTechStack/CompleteSupportTechStack";
 import Estimated from "./HomePage/Estimated/Estimated";
 import OptimizedDevelopment from "./HomePage/OptimizedDevelopment/OptimizedDevelopment";
-// import OurGlobalFamily from "./HomePage/OurGlobalFamily/OurGlobalFamily";
+import OurGlobalFamily from "./HomePage/OurGlobalFamily/OurGlobalFamily";
 import TransformIdeas from "./HomePage/TransformIdeas/TransformIdeas";
 import TrustedBy from "./HomePage/TrustedBy/TrustedBy";
 import ScrollLanguage from "./shared/ScrollLanguage";
@@ -16,14 +16,13 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col justify-center items-center w-full  min-h-screen font-manrope xl:mb-10 md:mx-10 ">
-      {/* <LanguageButton/> */}
       <Banner />
       <TransformIdeas />
       <TrustedBy />
       <OptimizedDevelopment />
       <CaseStudies />
       <Estimated />
-      {/* <OurGlobalFamily /> */}
+      <OurGlobalFamily />
       <ClearSteps />
       <CompleteSupportTechStack/>
       <ClientsSays/>

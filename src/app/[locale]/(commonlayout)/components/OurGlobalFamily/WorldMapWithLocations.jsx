@@ -58,10 +58,10 @@ const WorldMapWithLocations = () => {
   const height = 600;
 
   return (
-    <div className="relative w-full h-[200px] md:h-[600px] bg-white flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[200px] md:h-[600px] bg-white flex items-center justify-center overflow-hidden md:mt-10">
       {/* World Map Background */}
       <Image
-        src="/map/mapImage.jpg"
+        src="/map/mapImage.svg"
         alt="World Map"
         fill
         className="object-contain"
@@ -83,7 +83,7 @@ const WorldMapWithLocations = () => {
           {/* Icon */}
           <div className="w-8 h-8 bg-lightblue rounded-full border-2 border-white flex justify-center items-center cursor-pointer">
             <Image
-              src="/map/company.jpg"
+              src="/map/company.svg"
               alt="World Map"
               width={10}
               height={10}
@@ -93,12 +93,12 @@ const WorldMapWithLocations = () => {
           </div>
 
           {/* Card (hidden by default, show on hover) */}
-          <div className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-lightblue text-white rounded-lg p-4 w-60 shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
+          <div className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-lightblue text-white rounded-lg p-4 w-40 shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
             <Image
               src={loc.image}
               alt={loc.title}
-              width={240}
-              height={135}
+              width={140}
+              height={60}
               className="rounded-md mb-3"
             />
             <h3 className="text-lg font-semibold mb-1">{loc.title}</h3>

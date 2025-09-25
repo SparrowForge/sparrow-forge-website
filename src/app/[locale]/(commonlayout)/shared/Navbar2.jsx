@@ -41,7 +41,7 @@ const Navbar2 = () => {
         </ul>
         <div className='flex gap-2'>
           <LanguageButton />
-          <Link href="contactus">
+          <Link href="contact-us">
             <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-[16px] rounded-full hover:bg-lightblue-50 transition">
               {t(LOCALE_KEYS.CONTACT_US)}{" "}
               <Image src="/shared/Vector.svg" alt="Phone" width={12} height={12} />
@@ -83,7 +83,7 @@ const Navbar2 = () => {
             <LanguageButton />
           </li>
           <li>
-            <Link href="contactus">
+            <Link href="contact-us">
               <button className="w-full flex items-center justify-center gap-1 px-4 py-2 border border-lightblue text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
                 {t(LOCALE_KEYS.CONTACT_US)}{" "}
                 <Image src="/Phone.svg" alt="Phone" width={18} height={18} />

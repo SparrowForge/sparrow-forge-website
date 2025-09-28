@@ -64,7 +64,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white px-4 py-10 md:p-10 rounded-[38px] md:h-[122vh] 2xl:h-screen">
+        <div className="bg-white px-4 py-10 md:p-10 rounded-[38px]">
             <ButtonTitle title={t(LOCALE_KEYS.BUTTON_TITLE)} />
             <h1 className="font-bold text-[32px] mt-4">
                 {t(LOCALE_KEYS.HEADING)}

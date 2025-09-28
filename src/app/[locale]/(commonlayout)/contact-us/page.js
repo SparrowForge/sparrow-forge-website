@@ -9,18 +9,13 @@ import FrequentlyAQ from '../ContactPage/FrequentlyAQ/FrequentlyAQ';
 const Contact = () => {
     return (
         <div>
-            <div className="bg-lightblue/10 text-deepblue p-4 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-10 mx-4 rounded-[38px]">
-                <div className='w-full md:w-1/2'>
-                    <GetInTouchContact />
-                </div>
-                <div className='w-full md:w-1/2'>
-                    <ContactForm />
-                </div>
-
+           <div className="bg-lightblue/10 text-deepblue p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 items-stretch gap-4 lg:gap-10 rounded-[28px] md:rounded-[38px] mt-4 w-full">
+               <GetInTouchContact/>
+                <ContactForm />
             </div>
-            <FrequentlyAQ/>
-            <ScrollLanguage/>
-            <ScrollToTop/>
+            <FrequentlyAQ />
+            <ScrollLanguage />
+            <ScrollToTop />
         </div>
 
     );

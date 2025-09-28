@@ -222,7 +222,7 @@ export const LOCALE_KEYS = {
   },
   RATING_STAR: "CLIENTS_RATING_STAR",
   COMPLETE_SUPPORT_TITLE: "COMPLETE_SUPPORT_TITLE",
-  BUTTON_TITLE: "button_title",
+  BUTTON_TITLE_GET: "button_title",
   HEADING: "heading",
   DESCRIPTION: "description",
   ROLE: "role",

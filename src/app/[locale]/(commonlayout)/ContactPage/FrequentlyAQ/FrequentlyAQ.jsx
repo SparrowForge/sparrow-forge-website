@@ -42,7 +42,7 @@ const FrequentlyAQ = () => {
             <Title
                 title={t(LOCALE_KEYS.FAQ.TITLE)}
                 subtitle={t(LOCALE_KEYS.FAQ.SUBTITLE)}
-                className="flex flex-col justify-center items-center gap-4 my-4 md:mx-64 text-center pb-10"
+                className="flex flex-col justify-center items-center gap-4 my-4 lg:mx-64 text-center pb-10"
             />
 
             {faqItems.map((item, index) => (

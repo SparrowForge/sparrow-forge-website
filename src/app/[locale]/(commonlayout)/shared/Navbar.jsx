@@ -26,11 +26,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 md:px-0 w-full lg:w-[1194px] md:mx-auto">
+      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 lg:px-0 w-full lg:w-[1194px] lg:mx-auto ">
         <SparrowLogo />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex justify-center items-center gap-4 text-[16px] text-white/50 line-clamp-1">
+        <ul className="hidden md:flex justify-center items-center gap-2 lg:gap-4 text-[12px] lg:text-[16px] text-white/50 line-clamp-1">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a href={item.href} className="hover:text-lightblue transition">
@@ -40,10 +40,10 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='hidden md:flex gap-2'>
+        <div className='hidden md:flex lg:gap-2'>
           <LanguageButton />
           <Link href="contact-us">
-            <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-[16px] rounded-full hover:bg-lightblue-50 transition">
+            <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-sm lg:text-[16px] rounded-full hover:bg-lightblue-50 transition">
               {t(LOCALE_KEYS.CONTACT_US)}{" "}
               <Image src="/shared/Vector.svg" alt="Phone" width={12} height={12} />
             </button>
@@ -97,9 +97,6 @@ const Navbar = () => {
       </div>
         </div>
       )}
-
-    
-
     </>
   );
 };

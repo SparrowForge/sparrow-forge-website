@@ -62,7 +62,7 @@ const Footer = () => {
         <FooterAboveCard />
       </div>
 
-      <div className="w-full md:w-[1194px] mx-auto">
+      <div className="w-full lg:w-[1194px] mx-auto">
         {/* Footer Main */}
         <div className="mx-10 md:mx-0 flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
           {/* Logo */}

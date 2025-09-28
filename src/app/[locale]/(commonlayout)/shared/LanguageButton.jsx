@@ -41,7 +41,7 @@ const LanguageButton = () => {
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute right-2 md:left-0 mt-2 w-20 md:w-40 rounded-md bg-deepblue/90 shadow-lg z-50">
+        <div className="absolute right-2 md:left-0 mt-2 w-28 md:w-40 rounded-md bg-deepblue/90 shadow-lg z-50">
           <ul className="py-1 text-white">
             {languages.map((lang) => (
               <li key={lang.code}>

@@ -3,7 +3,7 @@
 const OptimizedDevelopmentCard = ({ value, title, subtitle, description }) => (
     <div className="bg-white shadow-md rounded-xl p-6 w-[320px] md:w-[420px] flex flex-col gap-2">
        <div className="flex justify-start items-end">
-         <h2 className="text-2xl md:text-[62px] font-bold text-lightblue">
+         <h2 className="text-2xl md:text-[30px] lg:text-[62px] font-bold text-lightblue">
             {value}
         </h2>
         <h3 className="text-[14px] font-semibold text-gray-500 md:mb-4">{subtitle}</h3>

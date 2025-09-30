@@ -3,7 +3,7 @@ import React from 'react';
 const Title = ({ title, subtitle, className = '' }) => {
     return (
         <div className={` ${className}`}>
-            <h1 className='text-[24px] md:text-[56px] font-bold text-deepblue'>{title}</h1>
+            <h1 className='text-[24px] md:text-[40px] lg:text-[56px] font-bold text-deepblue'>{title}</h1>
             <p className='text-[14px] md:text-[20px] text-navtext  '>{subtitle}</p>
         </div>
     );

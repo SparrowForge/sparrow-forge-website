@@ -34,7 +34,7 @@ const Estimated = () => {
 
   return (
     <div className="w-full bg-deepblue text-white py-10 px-4 md:p-16">
-      <div className="w-full md:w-[1194px] md:mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="w-full lg:w-[1194px] md:mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Left Content */}
         <div className="md:w-1/2 space-y-6">
           {/* Tabs */}

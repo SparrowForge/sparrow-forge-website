@@ -9,8 +9,8 @@ const GetInTouchContact = () => {
  const { t } = useLocalization();
 
   return (
-    <div className="bg-white text-deepblue px-4 py-10 md:p-10 flex flex-col justify-start items-start gap-4 rounded-[38px] md:h-[122vh] 2xl:h-screen">
-      <ButtonTitle title={t(LOCALE_KEYS.BUTTON_TITLE)} />
+    <div className="bg-white text-deepblue px-4 py-10 md:p-10 flex flex-col justify-start items-start gap-4 rounded-[38px] k-full">
+      <ButtonTitle title={t(LOCALE_KEYS.BUTTON_TITLE_GET)} />
 
       <h1 className="font-bold text-[32px]">{t(LOCALE_KEYS.HEADING)}</h1>
       <p className="text-[16px]">{t(LOCALE_KEYS.DESCRIPTION)}</p>
@@ -30,7 +30,7 @@ const GetInTouchContact = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-between items-start gap-10">
+      <div className="flex flex-col justify-between items-start gap-10 ">
         {/* Email */}
         <div className="flex justify-center items-start gap-2 border border-lightblue p-2 rounded-xl">
           <div className="bg-lightblue rounded-xl p-2">

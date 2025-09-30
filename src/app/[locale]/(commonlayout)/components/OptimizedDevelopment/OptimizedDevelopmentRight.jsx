@@ -58,22 +58,24 @@ const OptimizedDevelopmentRight = () => {
   }, []);
 
   return (
-    <div className="flex-1 relative h-full flex justify-center md:ml-32">
+    <div className="flex-1 relative h-auto lg:h-full flex justify-center lg:ml-32">
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={30}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         breakpoints={{
-          1024: { slidesPerView: 2 },
-          1280: { slidesPerView: 4 },
-          1536: { slidesPerView: 4 },
+          640: { slidesPerView: 2, spaceBetween: 6 },   // small tablets
+          768: { slidesPerView: 3, spaceBetween: 20 },   // medium tablets
+          1024: { slidesPerView: 4, spaceBetween: 40 },  // large tablets / laptops
+          1280: { slidesPerView: 4, spaceBetween: 20 },  // desktops
+          1536: { slidesPerView: 4, spaceBetween: 20 },  // xl screens
         }}
         modules={[Mousewheel]}
-        className="w-full h-full"
+       className="w-full h-auto lg:h-full"
       >
         {cards.map((card, index) => (
-          <SwiperSlide key={index} className="flex justify-center items-center">
+          <SwiperSlide key={index} className="!h-auto flex justify-center ">
             <OptimizedDevelopmentCard
               value={card.value}
               title={card.title}

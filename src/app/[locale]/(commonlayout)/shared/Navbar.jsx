@@ -4,29 +4,15 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { TfiMenuAlt } from "react-icons/tfi";
+import { FaChevronDown } from "react-icons/fa"; // dropdown arrow
 import SparrowLogo from './SparrowLogo';
 import Link from 'next/link';
 import { useLocalization } from '@/hooks/useLocalization';
 import { LOCALE_KEYS } from '@/constants/localizationKeys';
 import LanguageButton from './LanguageButton';
 
-// Define keys for menu and buttons
-// Add these keys in your LOCALE_KEYS object
-// Example:
-// export const LOCALE_KEYS = {
-//   WELCOME: "WELCOME",
-//   LANGUAGE: "LANGUAGE",
-//   HOME: "HOME",
-//   SERVICE: "SERVICE",
-//   ABOUT_US: "ABOUT_US",
-//   TEAMS: "TEAMS",
-//   CAREER: "CAREER",
-//   BLOG: "BLOG",
-//   CONTACT_US: "CONTACT_US",
-// };
-
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); 
   const { t } = useLocalization();
 
   const menuItems = [
@@ -39,12 +25,12 @@ const Navbar = () => {
   ];
 
   return (
-      <>
-      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 md:px-0 w-full md:w-[1194px] md:mx-auto">
+    <>
+      <div className="relative font-manrope flex items-center justify-between mt-4 md:my-4 h-[64px] rounded-full py-6 px-2 lg:px-0 w-full lg:w-[1194px] lg:mx-auto ">
         <SparrowLogo />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex justify-center items-center gap-4 text-[16px] text-white/50 line-clamp-1">
+        <ul className="hidden md:flex justify-center items-center gap-2 lg:gap-4 text-[12px] lg:text-[16px] text-white/50 line-clamp-1">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a href={item.href} className="hover:text-lightblue transition">
@@ -52,62 +38,65 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-
         </ul>
-        <div className='hidden md:flex gap-2'>
+
+        <div className='hidden md:flex lg:gap-2'>
           <LanguageButton />
           <Link href="contact-us">
-            <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-[16px] rounded-full hover:bg-lightblue-50 transition">
+            <button className="hidden md:flex items-center gap-2 px-4 py-2 bg-lightblue text-white text-sm lg:text-[16px] rounded-full hover:bg-lightblue-50 transition">
               {t(LOCALE_KEYS.CONTACT_US)}{" "}
               <Image src="/shared/Vector.svg" alt="Phone" width={12} height={12} />
             </button>
           </Link>
         </div>
 
-
         {/* Mobile Menu Button */}
-        <div className="flex justify-center items-center md:hidden">
-          <LanguageButton/>
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? (
+        <div className="flex justify-center items-center md:hidden gap-0">
+          <LanguageButton />
+          <button
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="flex items-center justify-between w-full px-2 py-2 text-white bg-deepblue/10 rounded-md hover:bg-lightblue transition"
+          >
+            {dropdownOpen ? (
               <RxCross2 size={24} className="text-white" />
             ) : (
               <TfiMenuAlt size={24} className="text-white" />
             )}
+         
           </button>
         </div>
       </div>
 
-      {/* Mobile Slide Menu */}
-      <div
-        className={`absolute top-[86px] right-0 rounded-2xl w-1/2 max-w-xs bg-deepblue shadow-lg p-6 z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'
-          } md:hidden`}
-      >
-        <ul className="flex flex-col gap-4 text-[16px] text-white">
+
+      {/* Dropdown Items */}
+      {dropdownOpen && (
+        <div className='absolute right-2 md:left-0 w-1/2 bg-deepblue/90 rounded-xl p-4 z-50 md:hidden'>
+        <ul className="mt-2 flex flex-col gap-2 text-[16px] text-white">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a
                 href={item.href}
-                onClick={() => setMenuOpen(false)}
-                className="block hover:text-lightblue transition"
+                onClick={() => {
+                  setDropdownOpen(false);
+                }}
+                className="block px-4 py-2 rounded-md hover:bg-lightblue transition"
               >
                 {t(item.name)}
               </a>
             </li>
           ))}
-          {/* <li>
-            <LanguageButton />
-          </li> */}
-          <li>
-            <Link href="contact-us">
-              <button className="w-full flex items-center justify-center gap-1 px-2 py-2 border border-white text-white hover:text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
-                {t(LOCALE_KEYS.CONTACT_US)}{" "}
-                <Image src="/shared/Vector.svg" alt="Phone" width={18} height={18} />
-              </button>
-            </Link>
-          </li>
         </ul>
+  {/* Contact Button */}
+      <div className="md:hidden mt-4">
+        <Link href="contact-us">
+          <button className="w-full flex items-center justify-center gap-1 px-2 py-2 border border-white text-white hover:text-lightblue text-[16px] rounded-full hover:bg-lightblue-50 transition">
+            {t(LOCALE_KEYS.CONTACT_US)}{" "}
+            <Image src="/shared/Vector.svg" alt="Phone" width={18} height={18} />
+          </button>
+        </Link>
       </div>
+        </div>
+      )}
     </>
   );
 };

@@ -14,7 +14,7 @@ const OurGlobalFamily = () => {
       <Title
         title={t(LOCALE_KEYS.OUR_GLOBAL_FAMILY_TITLE)}
         subtitle={t(LOCALE_KEYS.OUR_GLOBAL_FAMILY_SUBTITLE)}
-        className="flex flex-col justify-center items-center gap-4 my-4 md:mx-72 text-center"
+        className="flex flex-col justify-center items-center gap-4 my-4 mx-0 lg:mx-72 text-center"
       />
       <WorldMapWithLocations />
     </div>

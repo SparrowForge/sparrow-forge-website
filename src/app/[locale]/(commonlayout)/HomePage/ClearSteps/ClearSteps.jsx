@@ -14,7 +14,7 @@ const ClearSteps = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="max-w-[1194px] mx-auto flex flex-col justify-between md:flex-row items-start gap-10">
+      <div className="max-w-[1194px] mx-auto flex flex-col justify-between md:flex-row items-start lg:gap-10">
         {/* Left Section */}
         <div className="w-full md:w-1/2 md:sticky md:top-20 self-start">
           <ClearStepsLeft />

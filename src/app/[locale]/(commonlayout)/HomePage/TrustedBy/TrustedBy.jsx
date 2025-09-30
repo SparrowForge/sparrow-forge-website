@@ -21,7 +21,7 @@ const TrustedBy = () => {
     const { t } = useLocalization();
     return (
         <div className="w-full lg:w-[1194px] mx-auto px-4 my-10 md:my-28 md:mx-52 flex flex-col ">
-            <h1 className="text-center text-2xl md:text-[48px]  font-bold my-10 text-deepblue">{t(LOCALE_KEYS.TRUSTED_BY)}</h1>
+            <h1 className="text-center text-2xl md:text-[30px] lg:text-[48px]  font-bold my-10 text-deepblue">{t(LOCALE_KEYS.TRUSTED_BY)}</h1>
             <Marquee pauseOnHover speed={50} gradient={false}>
                 {data.map((item) => (
                     <div key={item.id} className="opacity-50 hover:opacity-100" >

@@ -22,7 +22,7 @@ const CompleteSupportTechStack = () => {
 
   return (
     <div className="w-full lg:w-[1194px] mx-auto my-10 md:my-20 flex flex-col gap-10">
-      <h1 className="text-center text-2xl md:text-[48px] font-bold md:my-10">
+      <h1 className="text-center text-2xl md:text-[30px] lg:text-[48px] font-bold md:my-10">
         {t(LOCALE_KEYS.COMPLETE_SUPPORT_TITLE)}
       </h1>
 

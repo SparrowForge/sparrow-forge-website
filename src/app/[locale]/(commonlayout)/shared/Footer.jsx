@@ -131,7 +131,7 @@ const Footer = () => {
     </div>
 
     {/* Bottom Bar */}
-    <div className="border-t border-white/10 mt-12 pt-6 text-sm text-white/50">
+    <div className="border-t border-white/10 mt-12 pt-6 text-sm text-white/50 mx-10">
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <p className="text-center sm:text-left">{t(LOCALE_KEYS.COPYRIGHT)}</p>
         <div className="flex gap-4">

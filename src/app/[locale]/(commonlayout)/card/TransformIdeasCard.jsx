@@ -37,9 +37,9 @@ const TransformIdeasCard = () => {
     },
     {
       id: 5,
-      name: t(LOCALE_KEYS.TELCO_TITLE),
+      name: t(LOCALE_KEYS.LMS_TITLE),
       icon: <FaSatelliteDish className="w-10 h-10 text-lightblue group-hover:text-white transition " />,
-      description: t(LOCALE_KEYS.TELCO_DESC),
+      description: t(LOCALE_KEYS.LMS_DESC),
     },
     {
       id: 6,

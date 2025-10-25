@@ -73,8 +73,11 @@
   "CASE_STUDIES_SUBTITLE": "Descubra como as estratégias inovadoras e soluções criativas da nossa agência ajudaram clientes a alcançar um crescimento e sucesso notáveis.",
   "CASE_STUDIES_BUTTON": "Ver todos os Estudos de Caso",
   "CASE_STATS_CLIENT_SATISFACTION": "Taxa de Satisfação do Cliente",
+  "CASE_STATS_CLIENT_SATISFACTION_DESCRIPTION": "Oferecendo experiências que encantam, fidelizam e impressionam",
   "CASE_STATS_ROI": "Aumento Médio do ROI",
+  "CASE_STATS_ROI_DESCRIPTION": "Transformando estratégias inovadoras em sucesso empresarial mensurável",
   "CASE_STATS_DELIVERY": "Tempo de Entrega de Projetos Reduzido",
+  "CASE_STATS_DELIVERY_DESCRIPTION": "Acelerando projetos sem comprometer a qualidade ou a precisão",
   "CASESTUDIES": {
     "BUTTON1": {
       "UXUI": "UX/UI",
@@ -121,7 +124,7 @@
   "STATS_INDUSTRIES": "Indústrias atendidas no mundo todo",
   "our_global_family_title": "Notre Famille Mondiale",
   "our_global_family_subtitle": "Notre présence internationale nous permet de collaborer entre les cultures, de résoudre des défis complexes et de fournir des solutions numériques évolutives qui favorisent la réussite à l’échelle mondiale.",
-  "CLEARSTEPS_TITLE": "Uma abordagem estratégica para construir software de nível empresarial.",
+  "CLEARSTEPS_TITLE": "Construindo software de nível empresarial",
   "CLEARSTEPS_DESCRIPTION": "Fazemos parceria com organizações para projetar, construir e escalar softwares que gerem impacto empresarial mensurável.\n\nNosso processo é baseado em precisão, segurança e excelência—entregando soluções digitais robustas que capacitam as empresas a inovar com confiança e operar de forma eficiente.",
   "CLEARSTEPS_BUTTON": "Começar",
   "CLEARSTEPS_CARD1_TITLE": "Descoberta Estratégica e Avaliação de Tecnologia",

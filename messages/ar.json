@@ -73,8 +73,11 @@
   "CASE_STUDIES_SUBTITLE": "اكتشف كيف ساعدت استراتيجيات وكالتنا المبتكرة وحلولها الإبداعية العملاء على تحقيق نمو ونجاح ملحوظ.",
   "CASE_STUDIES_BUTTON": "عرض جميع دراسات الحالة",
   "CASE_STATS_CLIENT_SATISFACTION": "معدل رضا العملاء",
+  "CASE_STATS_CLIENT_SATISFACTION_DESCRIPTION": "تقديم تجارب تُسعد، تحافظ على العملاء، وتثير الإعجاب",
   "CASE_STATS_ROI": "متوسط زيادة العائد على الاستثمار",
+  "CASE_STATS_ROI_DESCRIPTION": "تحويل الاستراتيجيات المبتكرة إلى نجاح تجاري قابل للقياس",
   "CASE_STATS_DELIVERY": "تقليص وقت تسليم المشروع",
+  "CASE_STATS_DELIVERY_DESCRIPTION": "تسريع المشروع دون المساس بالجودة أو الدقة",
   "CASESTUDIES": {
     "BUTTON1": {
       "UXUI": "واجهة المستخدم وتجربة المستخدم",
@@ -121,7 +124,7 @@
   "STATS_INDUSTRIES": "صناعات تم خدمتها حول العالم",
   "our_global_family_title": "Nuestra Familia Global",
   "our_global_family_subtitle": "Nuestra presencia internacional nos permite colaborar entre culturas, resolver desafíos complejos y ofrecer soluciones digitales escalables que impulsan el éxito en todo el mundo.",
-  "CLEARSTEPS_TITLE": "نهج استراتيجي لبناء برمجيات على مستوى المؤسسات",
+  "CLEARSTEPS_TITLE": "بناء برمجيات على مستوى المؤسسات",
   "CLEARSTEPS_DESCRIPTION": "نتعاون مع المؤسسات لتصميم وبناء وتوسيع البرمجيات التي تحقق تأثيرًا تجاريًا قابلًا للقياس.\n\nتستند عمليتنا إلى الدقة والأمان والتميز—موفرة حلولًا رقمية قوية تمكّن المؤسسات من الابتكار بثقة والعمل بكفاءة",
   "CLEARSTEPS_BUTTON": "ابدأ الآن",
   "CLEARSTEPS_CARD1_TITLE": "الاكتشاف الاستراتيجي وتقييم التكنولوجيا",

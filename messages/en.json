@@ -72,9 +72,13 @@
   "CASE_STUDIES_TITLE": "Case Studies",
   "CASE_STUDIES_SUBTITLE": "Discover how our agency’s innovative strategies and creative solutions have helped clients achieve remarkable growth and success.",
   "CASE_STUDIES_BUTTON": "View all Case Studies",
-  "CASE_STATS_CLIENT_SATISFACTION": "Client Satisfaction Rate",
-  "CASE_STATS_ROI": "Average ROI Increase",
-  "CASE_STATS_DELIVERY": "Project Delivery Time Reduced",
+  "CASE_STATS_CLIENT_SATISFACTION": "Happy Clients",
+  "CASE_STATS_CLIENT_SATISFACTION_DESCRIPTION": "Delivering experiences that delight, retain, and imporess",
+  "CASE_STATS_ROI": "ROI Growth",
+  "CASE_STATS_ROI_DESCRIPTION": "Turning innovative strategies into measurable business success",
+  "CASE_STATS_DELIVERY": "Faster Delivery",
+  "CASE_STATS_DELIVERY_DESCRIPTION": "Accelerating project without compromising quality or precision",
+
   "CASESTUDIES": {
     "BUTTON1": {
       "UXUI": "UX/UI",
@@ -121,7 +125,7 @@
   "STATS_INDUSTRIES": "Industries served worldwide",
   "our_global_family_title": "Our Global Family",
   "our_global_family_subtitle": "Our international presence enables us to collaborate across cultures, solve complex challenges, and deliver scalable digital solutions that drive success worldwide.",
-  "CLEARSTEPS_TITLE": "A Strategic Approach to Building Enterprise-Grade Software",
+  "CLEARSTEPS_TITLE": "Building Enterprise-Grade Software",
   "CLEARSTEPS_DESCRIPTION": "We partner with organizations to design, build, and scale software that drives measurable business impact.\n\nOur process is built on precision, security, and excellence—delivering robust digital solutions that empower enterprises to innovate confidently and operate efficiently.",
   "CLEARSTEPS_BUTTON": "Get Started",
   "CLEARSTEPS_CARD1_TITLE": "Strategic Discovery & Technology Assessment",

@@ -10,7 +10,7 @@ const OurGlobalFamily = () => {
   const t = useTranslations(); 
 
   return (
-    <div className="flex flex-col justify-between items-center py-10">
+    <div id="teams" className="flex flex-col justify-between items-center scroll-mt-4 py-10">
       <Title
         title={t(LOCALE_KEYS.OUR_GLOBAL_FAMILY_TITLE)}
         subtitle={t(LOCALE_KEYS.OUR_GLOBAL_FAMILY_SUBTITLE)}

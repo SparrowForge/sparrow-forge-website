@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useLocalization } from '@/hooks/useLocalization';
 import { LOCALE_KEYS } from '@/constants/localizationKeys';
 import LanguageButton from './LanguageButton';
+import { Link as LocaleLink } from '@/i18n/navigation';
 
 const Navbar2 = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -32,9 +33,9 @@ const Navbar2 = () => {
         <ul className="hidden md:flex justify-center items-center gap-2 lg:gap-4 text-[12px] lg:text-[16px] text-white/50 line-clamp-1">
           {menuItems.map((item) => (
             <li key={item.name}>
-              <a href={item.href} className="hover:text-lightblue transition">
+              <LocaleLink href={item.href} className="hover:text-lightblue transition">
                 {t(item.name)}
-              </a>
+              </LocaleLink>
             </li>
           ))}
         </ul>
@@ -73,7 +74,7 @@ const Navbar2 = () => {
         <ul className="mt-2 flex flex-col gap-2 text-[16px] text-white">
           {menuItems.map((item) => (
             <li key={item.name}>
-              <a
+              <LocaleLink
                 href={item.href}
                 onClick={() => {
                   setDropdownOpen(false);
@@ -81,7 +82,7 @@ const Navbar2 = () => {
                 className="block px-4 py-2 rounded-md hover:bg-lightblue transition"
               >
                 {t(item.name)}
-              </a>
+              </LocaleLink>
             </li>
           ))}
         </ul>
